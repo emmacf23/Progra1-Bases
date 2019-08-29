@@ -1,0 +1,84 @@
+﻿﻿
+
+@{
+    ViewData["Title"] = "Add Beneficiaries";
+}
+
+
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Banco Verdun</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
+                    </li>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Transacciones
+                        </a>
+          
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Estado de Cuenta</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="Beneficiaries">Beneficiarios</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy">Crear Ahorro</a>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Ingrese sus datos</h3>
+                    </div>
+                    <div class="panel-body">
+                        <fieldset>
+                            <div class="form-group">
+                                <i class="fas fa-user"></i> <br> <input class="form-control" placeholder="Nombre" name="usuario" type="text" autofocus id="txtUsuario" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-id-card"></i> <br> <input class="form-control" placeholder="Identificacion" name="identificacion" type="text" autofocus id="txtIdentificacion" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-at"></i> <br> <input class="form-control" placeholder="Email" name="email" type="email" autofocus id="txtEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-user-friends"></i> <br> <input class="form-control" placeholder="Parentesco" name="password" type="text" id="txtParentesco" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-percentage"></i> <br> <input class="form-control" placeholder="Porcentaje de Beneficio" name="porcentage" type="number" id="intPorcentage" required max="100" min="0">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-phone"></i> <br> <input class="form-control" placeholder="Numero" name="numero" type="tel" id="intNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-calendar-week"></i> <br> <input class="form-control" name="date" type="date" id="date" required>
+                            </div>
+                            <div>
+                                <button id="btnIngresar" class="btn btn-lg btn-success btn-block">Añadir</button>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

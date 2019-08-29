@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Progra1BD.-439454523.00" t="ExcludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_jquery_3.3.1_jquery.js" t="IncludeRecursive" />
-    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_twitter-bootstrap_4.1.3_js_bootstrap.bundle.js" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Progra1BD.-355781386.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD" t="IncludeRecursive">
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="HomeController.cs" t="Include" />
+        <e p="LoginController.cs" t="Include" />
+        <e p="TransactionController.cs" t="Include" />
       </e>
       <e p="global.json" t="Include" />
       <e p="Models" t="Include">
@@ -40,11 +38,18 @@
           <e p="Index.cshtml" t="Include" />
           <e p="Privacy.cshtml" t="Include" />
         </e>
+        <e p="Login" t="Include">
+          <e p="Login.cshtml" t="Include" />
+        </e>
         <e p="Shared" t="Include">
           <e p="_CookieConsentPartial.cshtml" t="Include" />
           <e p="_Layout.cshtml" t="Include" />
           <e p="_ValidationScriptsPartial.cshtml" t="Include" />
           <e p="Error.cshtml" t="Include" />
+        </e>
+        <e p="Transaction" t="Include">
+          <e p="AddBeneficiaries.cshtml" t="Include" />
+          <e p="Beneficiaries.cshtml" t="Include" />
         </e>
       </e>
       <e p="wwwroot" t="Include">
@@ -54,20 +59,37 @@
         </e>
         <e p="favicon.ico" t="Include" />
         <e p="gulpfile.js" t="Include" />
+        <e p="img" t="Include">
+          <e p="beverage-3157395_640.jpg" t="Include" />
+          <e p="business-3152586_640.jpg" t="Include" />
+          <e p="computer-3368242_640.jpg" t="Include" />
+          <e p="desk-3139127_1280.jpg" t="Include" />
+          <e p="desk-640.jpg" t="Include" />
+          <e p="document-640.jpg" t="Include" />
+          <e p="electronic-4433604_1280.jpg" t="Include" />
+          <e p="electronic-4433604_1920.jpg" t="Include" />
+          <e p="electronic-4433604_640.jpg" t="Include" />
+          <e p="hand-640.jpg" t="Include" />
+          <e p="laptop-640.jpg" t="Include" />
+          <e p="team-3373638_1280.jpg" t="Include" />
+          <e p="team-640.jpg" t="Include" />
+          <e p="workplace-1245776_640.jpg" t="Include" />
+          <e p="workplace-1280.jpg" t="Include" />
+        </e>
         <e p="js" t="Include">
           <e p="site.js" t="Include" />
         </e>
-        <e p="node_modules/@types" t="IncludeRecursive">
+        <e p="node_modules\@types" t="IncludeRecursive">
           <e p="events" t="IncludeRecursive" />
           <e p="minimatch" t="IncludeRecursive" />
           <e p="node" t="IncludeRecursive" />
         </e>
-        <e p="node_modules/bootstrap" t="IncludeRecursive" />
-        <e p="node_modules/browser-sync" t="IncludeRecursive" />
-        <e p="node_modules/del" t="IncludeRecursive" />
-        <e p="node_modules/gulp" t="IncludeRecursive" />
-        <e p="node_modules/jquery" t="IncludeRecursive" />
-        <e p="node_modules/merge-stream" t="IncludeRecursive" />
+        <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\browser-sync" t="IncludeRecursive" />
+        <e p="node_modules\del" t="IncludeRecursive" />
+        <e p="node_modules\gulp" t="IncludeRecursive" />
+        <e p="node_modules\jquery" t="IncludeRecursive" />
+        <e p="node_modules\merge-stream" t="IncludeRecursive" />
         <e p="package-lock.json" t="Include" />
         <e p="package.json" t="Include" />
         <e p="vendor" t="Include">

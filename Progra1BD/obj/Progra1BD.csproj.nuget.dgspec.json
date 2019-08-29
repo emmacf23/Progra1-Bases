@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/Progra1BD.csproj": {}
+    "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\Progra1BD.csproj": {}
   },
   "projects": {
-    "/Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/Progra1BD.csproj": {
+    "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\Progra1BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/Progra1BD.csproj",
+        "projectUniqueName": "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\Progra1BD.csproj",
         "projectName": "Progra1BD",
-        "projectPath": "/Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/Progra1BD.csproj",
-        "packagesPath": "/Users/edgar/.nuget/packages/",
-        "outputPath": "/Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/",
+        "projectPath": "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\Progra1BD.csproj",
+        "packagesPath": "C:\\Users\\Emmanuel Castro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/edgar/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Emmanuel Castro\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -39,6 +39,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.3.0-preview8-19405-04, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
