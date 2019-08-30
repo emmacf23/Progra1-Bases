@@ -8,6 +8,7 @@
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
+        <e p="AboutController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
         <e p="LoginController.cs" t="Include" />
         <e p="TransactionController.cs" t="Include" />
@@ -34,6 +35,9 @@
       <e p="Views" t="Include">
         <e p="_ViewImports.cshtml" t="Include" />
         <e p="_ViewStart.cshtml" t="Include" />
+        <e p="About" t="Include">
+          <e p="About.cshtml" t="Include" />
+        </e>
         <e p="Home" t="Include">
           <e p="Index.cshtml" t="Include" />
           <e p="Privacy.cshtml" t="Include" />
@@ -50,6 +54,7 @@
         <e p="Transaction" t="Include">
           <e p="AddBeneficiaries.cshtml" t="Include" />
           <e p="Beneficiaries.cshtml" t="Include" />
+          <e p="NewSavings.cshtml" t="Include" />
         </e>
       </e>
       <e p="wwwroot" t="Include">
@@ -60,17 +65,28 @@
         <e p="favicon.ico" t="Include" />
         <e p="gulpfile.js" t="Include" />
         <e p="img" t="Include">
+          <e p="beard-2642609_1280.jpg" t="Include" />
           <e p="beverage-3157395_640.jpg" t="Include" />
+          <e p="blur-1853262_1280.jpg" t="Include" />
+          <e p="blur-640.jpg" t="Include" />
           <e p="business-3152586_640.jpg" t="Include" />
           <e p="computer-3368242_640.jpg" t="Include" />
           <e p="desk-3139127_1280.jpg" t="Include" />
           <e p="desk-640.jpg" t="Include" />
           <e p="document-640.jpg" t="Include" />
+          <e p="dollar-499481_1280.jpg" t="Include" />
+          <e p="dollar-499481_640.jpg" t="Include" />
           <e p="electronic-4433604_1280.jpg" t="Include" />
           <e p="electronic-4433604_1920.jpg" t="Include" />
           <e p="electronic-4433604_640.jpg" t="Include" />
           <e p="hand-640.jpg" t="Include" />
           <e p="laptop-640.jpg" t="Include" />
+          <e p="paper-3190198_1280.jpg" t="Include" />
+          <e p="paper-3190198_640.jpg" t="Include" />
+          <e p="piggy-3608365_1280.jpg" t="Include" />
+          <e p="piggy-640.jpg" t="Include" />
+          <e p="piggy-bank-2889042_1920.jpg" t="Include" />
+          <e p="piggy-bank-2889042_640.jpg" t="Include" />
           <e p="team-3373638_1280.jpg" t="Include" />
           <e p="team-640.jpg" t="Include" />
           <e p="workplace-1245776_640.jpg" t="Include" />

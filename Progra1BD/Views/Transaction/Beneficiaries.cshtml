@@ -22,11 +22,11 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Estado de Cuenta</a>
               <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="Beneficiaries">Beneficiarios</a>
-              <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy">Crear Ahorro</a>
+              <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="NewSavings">Crear Ahorro</a>
             </div>
           </div>
         <li class="nav-item">
-            <a class="nav-link" asp-controller="Home" asp-action="Index">About</a>
+            <a class="nav-link" asp-controller="About" asp-action="About">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Salir</a>
@@ -39,7 +39,7 @@
     <header class="jumbotron my-4">
         <h1 class="display-3">Nunca había sido tan fácil!</h1>
         <p class="lead">Crea un ahorro automático, que se ajuste a tus necesidades. Edgar no sabe programar, wapo</p>
-        <a href="#" class="btn btn-primary btn-lg">Ahorra ya!</a>
+        <a asp-controller="Transaction" asp-action="NewSavings" class="btn btn-primary btn-lg">Ahorra ya!</a>
     </header>
 
     <!-- Page Features -->

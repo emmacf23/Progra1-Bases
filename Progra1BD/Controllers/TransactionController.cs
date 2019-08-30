@@ -18,5 +18,9 @@ namespace Progra1BD.Controllers
         {
             return View();
         }
+        public IActionResult NewSavings()
+        {
+            return View();
+        }
     }
 }

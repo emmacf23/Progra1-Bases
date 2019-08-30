@@ -61,3 +61,5 @@ C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj
 C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Login\Login.g.cshtml.cs
 C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\AddBeneficiaries.g.cshtml.cs
 C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\Beneficiaries.g.cshtml.cs
+C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\NewSavings.g.cshtml.cs
+C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\About\About.g.cshtml.cs
