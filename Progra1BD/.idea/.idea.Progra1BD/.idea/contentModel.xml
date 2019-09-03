@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Emmanuel Castro\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Emmanuel Castro\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Progra1BD.-355781386.00" t="ExcludeRecursive" />
     <e p="C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD" t="IncludeRecursive">
@@ -79,6 +82,7 @@
           <e p="electronic-4433604_1280.jpg" t="Include" />
           <e p="electronic-4433604_1920.jpg" t="Include" />
           <e p="electronic-4433604_640.jpg" t="Include" />
+          <e p="franco.jpg" t="Include" />
           <e p="hand-640.jpg" t="Include" />
           <e p="laptop-640.jpg" t="Include" />
           <e p="paper-3190198_1280.jpg" t="Include" />
