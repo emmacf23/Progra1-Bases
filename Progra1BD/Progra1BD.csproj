@@ -48,6 +48,11 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="Views\Customer\Create_customer.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Customer\Customer_details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Customer\Delete_customer.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Customer\Edit_customer.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Customer\Index.cshtml" />
     </ItemGroup>
 
 </Project>

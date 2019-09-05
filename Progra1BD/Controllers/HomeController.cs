@@ -12,6 +12,7 @@ namespace Progra1BD.Controllers
     {
         public IActionResult Index()
         {
+            
             return View();
         }
 

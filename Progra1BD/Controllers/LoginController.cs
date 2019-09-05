@@ -1,7 +1,9 @@
 ﻿﻿using System;
+ using System.Collections.Generic;
  using Progra1BD.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+ using System.Linq;
  using Microsoft.AspNetCore.Http;
  using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
@@ -9,6 +11,7 @@ using System.Diagnostics;
 {
     public class LoginController : Controller
     {
+        UserDataAcess_Layer objUser = new UserDataAcess_Layer();
         public IActionResult Login()
         {
             return View();
@@ -17,9 +20,22 @@ using System.Diagnostics;
         [HttpPost]
         public ActionResult Index(IFormCollection formCollection)
         {
-            string _user = formCollection["usuario"];
-            string _password = formCollection["password"];
-            return new RedirectToActionResult("Index","Home",new { mensaje = _user });
+            string _user = Convert.ToString(formCollection["inputUser"]);
+            string _password = Convert.ToString(formCollection["inputPassword"]);
+            List<User> Users = new List<User>();
+            Users = objUser.GetAllUsers().ToList();
+            foreach (var user in Users)
+            {
+                Console.WriteLine(user.Username);
+                Console.WriteLine(user.Password);
+                Console.WriteLine(_user);
+                Console.WriteLine(_password);
+                if (user.Username ==_user && user.Password ==_password)
+                {
+                    return new RedirectToActionResult("Index", "Home","Edgar");
+                }
+            }
+            return new RedirectToActionResult("AddBeneficiaries", "Transaction", new {mensaje = _user}); 
         }
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

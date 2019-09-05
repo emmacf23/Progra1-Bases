@@ -1,4 +1,4 @@
-﻿﻿
+﻿
 @{
     ViewData["Title"] = "Login";
 }
@@ -13,14 +13,14 @@
                     <form asp-controller="Login" asp-action="Index" class="form-signin">
                         <div class="form-label-group">
                             <i class="fas fa-user"></i> <label for="inputUser"> Usuario</label>
-                            <input type="text" id="inputUser" class="form-control" placeholder="Ingrese Usuario" required autofocus>
+                            <input type="text" name="inputUser" class="form-control" placeholder="Ingrese Usuario" required autofocus>
 
                         </div>
 
                         <div class="form-label-group">
                             
                             <i class="fas fa-lock"></i>   <label for="inputPassword">Password</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder=" Password" required>
+                            <input type="password" name="inputPassword" class="form-control" placeholder=" Password" required>
                         </div>
 
                         <div class="custom-control custom-checkbox mb-3">
@@ -37,31 +37,5 @@
     </div>
 </div>
 
-<!--
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="login-panel panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Ingrese sus datos</h3>
-                </div>
-                <div class="panel-body">
-                    <form asp-controller="Login" asp-action="Index">
-                    <fieldset>
-                        <div class="form-group">
-                            <i class="fas fa-user"></i>  <br> <input class="form-control" placeholder="Usuario" name="usuario" type="text" autofocus id="txtUsuario">
-                        </div>
-                        <div class="form-group">
-                            <i class="fas fa-lock"></i> <br> <input class="form-control" placeholder="Password" name="password" type="password" id="txtPassword">
-                        </div>
-                        
-                        <button id="btnIngresar" type="submit" class="btn btn-lg btn-success btn-block">Ingresar</button>
-                    </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
+
 
