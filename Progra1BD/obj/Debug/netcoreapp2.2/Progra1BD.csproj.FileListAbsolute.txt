@@ -28,38 +28,73 @@
 /Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.dll
 /Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.pdb
 /Users/edgar/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CopyComplete
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.deps.json
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.runtimeconfig.json
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.runtimeconfig.dev.json
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.dll
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.pdb
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.Views.dll
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\bin\Debug\netcoreapp2.2\Progra1BD.Views.pdb
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.csprojAssemblyReference.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.csproj.CoreCompileInputs.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.RazorAssemblyInfo.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.RazorAssemblyInfo.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.AssemblyInfoInputs.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.AssemblyInfo.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.TagHelpers.input.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.TagHelpers.output.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.RazorCoreGenerate.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.RazorTargetAssemblyInfo.cache
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.RazorTargetAssemblyInfo.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.Views.pdb
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.dll
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.pdb
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Progra1BD.csproj.CopyComplete
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Login\Login.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\AddBeneficiaries.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\Beneficiaries.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\Transaction\NewSavings.g.cshtml.cs
-C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD\obj\Debug\netcoreapp2.2\Razor\Views\About\About.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.deps.json
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.runtimeconfig.json
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.runtimeconfig.dev.json
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.dll
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.pdb
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.Views.pdb
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csprojAssemblyReference.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CoreCompileInputs.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorAssemblyInfo.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorAssemblyInfo.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.AssemblyInfoInputs.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.AssemblyInfo.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.TagHelpers.input.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.TagHelpers.output.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorCoreGenerate.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorTargetAssemblyInfo.cache
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorTargetAssemblyInfo.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.Views.pdb
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.dll
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.pdb
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CopyComplete
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/NewSavings.g.cshtml.cs
+C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/About/About.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.deps.json
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.runtimeconfig.json
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.runtimeconfig.dev.json
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.dll
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.pdb
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/bin/Debug/netcoreapp2.2/Progra1BD.Views.pdb
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csprojAssemblyReference.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CoreCompileInputs.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorAssemblyInfo.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorAssemblyInfo.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.AssemblyInfoInputs.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.AssemblyInfo.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.TagHelpers.input.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.TagHelpers.output.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorCoreGenerate.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/About/About.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/NewSavings.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorTargetAssemblyInfo.cache
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorTargetAssemblyInfo.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.Views.pdb
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.dll
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.pdb
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CopyComplete

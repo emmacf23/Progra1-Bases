@@ -8,8 +8,8 @@ using System.Diagnostics;
  using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
  namespace Progra1BD.Controllers
-{
-    public class LoginController : Controller
+ {
+     public class LoginController : Controller
     {
         UserDataAcess_Layer objUser = new UserDataAcess_Layer();
         public IActionResult Login()
@@ -26,13 +26,11 @@ using System.Diagnostics;
             Users = objUser.GetAllUsers().ToList();
             foreach (var user in Users)
             {
-                Console.WriteLine(user.Username);
-                Console.WriteLine(user.Password);
-                Console.WriteLine(_user);
-                Console.WriteLine(_password);
                 if (user.Username ==_user && user.Password ==_password)
                 {
-                    return new RedirectToActionResult("Index", "Home","Edgar");
+                    VariablesLocales.idClienteActual = user.ID;
+                    VariablesLocales.idCuentaActual = 1;
+                    return new RedirectToActionResult("Index", "Home",new {user = _user});
                 }
             }
             return new RedirectToActionResult("AddBeneficiaries", "Transaction", new {mensaje = _user}); 

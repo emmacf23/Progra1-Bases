@@ -1,13 +1,13 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\Progra1BD.csproj",
+    "projectUniqueName": "/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/Progra1BD.csproj",
     "projectName": "Progra1BD",
-    "projectPath": "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\Progra1BD.csproj",
-    "outputPath": "C:\\Users\\Emmanuel Castro\\RiderProjects\\Progra1 Bases\\Progra1-Bases\\Progra1BD\\obj\\",
+    "projectPath": "/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/Progra1BD.csproj",
+    "outputPath": "/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"

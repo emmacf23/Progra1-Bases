@@ -9,7 +9,7 @@ namespace Progra1BD.Models
 {
     public class BeneficiarieDataAcessLayer
     {
-                string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+                string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
 
         //To View all Customers details      
         public IEnumerable<Beneficiarie> GetAllBeneficiaries()
@@ -20,6 +20,8 @@ namespace Progra1BD.Models
             {
                 SqlCommand cmd = new SqlCommand("CASP_GetBeneficiarios", con);
                 cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@idCuenta", VariablesLocales.idCuentaActual);
 
                 con.Open();
                 SqlDataReader sdr = cmd.ExecuteReader();
