@@ -12,6 +12,7 @@ using System.Diagnostics;
      public class LoginController : Controller
     {
         UserDataAcess_Layer objUser = new UserDataAcess_Layer();
+        AccountDataAccess_Layer objAccount = new AccountDataAccess_Layer();
         public IActionResult Login()
         {
             return View();
@@ -29,13 +30,19 @@ using System.Diagnostics;
                 if (user.Username ==_user && user.Password ==_password)
                 {
                     VariablesLocales.idClienteActual = user.ID;
-                    VariablesLocales.idCuentaActual = 1;
-                    return new RedirectToActionResult("Index", "Home",new {user = _user});
+                    return new RedirectToActionResult("SelectAccount", "Login",new {user = _user});
                 }
             }
             return new RedirectToActionResult("AddBeneficiaries", "Transaction", new {mensaje = _user}); 
         }
-        
+
+        public IActionResult SelectAccount()
+        {
+            List<Account> listAccount = new List<Account>();
+            listAccount = objAccount.GetAllAccounts(VariablesLocales.idClienteActual).ToList();
+            return View(listAccount);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -43,5 +50,9 @@ using System.Diagnostics;
         }
 
 
+        public IActionResult Register()
+        {
+            return View();
+        }
     }
 }

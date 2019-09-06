@@ -101,46 +101,46 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Home/Privacy.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/About/About.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Login/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Beneficiarie.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/VariablesLocales.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Login/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/AboutController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Beneficiarie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Views/Customer/Create_customer.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Views/Customer/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/About/About.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/AboutController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/StateAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/VariablesLocales.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Login/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/dc/dbb3ca64/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DBC57F52-BDD4-45DA-8B29-C21452AD12F4/55/2b34e891/RazorPage`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Account.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Progra1BD.csproj" />
-        <option value="$PROJECT_DIR$/Startup.cs" />
-        <option value="$PROJECT_DIR$/Models/Cliente.cs" />
-        <option value="$PROJECT_DIR$/Models/Persona.cs" />
-        <option value="$PROJECT_DIR$/Service/Email/IActivationService.cs" />
-        <option value="$PROJECT_DIR$/Helpers/AESEncryption.cs" />
-        <option value="$PROJECT_DIR$/Helpers/PasswordEncode.cs" />
-        <option value="$PROJECT_DIR$/Repository/IRepositoryBase.cs" />
-        <option value="$PROJECT_DIR$/Service/Email/ActivationService.cs" />
-        <option value="$PROJECT_DIR$/Service/Users/IUserService.cs" />
-        <option value="$PROJECT_DIR$/Service/Users/UserService.cs" />
-        <option value="$PROJECT_DIR$/Models/UserModels/LoginViewModel.cs" />
-        <option value="$PROJECT_DIR$/Models/UserModels/RegisterViewModel.cs" />
         <option value="$PROJECT_DIR$/Models/DataContext.cs" />
         <option value="$PROJECT_DIR$/Models/EmailValid.cs" />
         <option value="$PROJECT_DIR$/Models/Users.cs" />
@@ -152,12 +152,7 @@
         <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1e7f742c-020e-469e-bad7-fe95790de186/console.sql" />
         <option value="$PROJECT_DIR$/wwwroot/css/business-frontpage.css" />
-        <option value="$PROJECT_DIR$/wwwroot/css/site.css" />
         <option value="$PROJECT_DIR$/Controllers/AboutController.cs" />
-        <option value="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
-        <option value="$PROJECT_DIR$/Views/About/About.cshtml" />
         <option value="$PROJECT_DIR$/Models/CustomerDataAccess_Layer.cs" />
         <option value="$PROJECT_DIR$/Models/Customer.cs" />
         <option value="$PROJECT_DIR$/Views/Customer/Create_customer.cshtml" />
@@ -167,15 +162,36 @@
         <option value="$PROJECT_DIR$/Views/Customer/Index.cshtml" />
         <option value="$PROJECT_DIR$/Controllers/CustomerController.cs" />
         <option value="$PROJECT_DIR$/Models/User.cs" />
-        <option value="$PROJECT_DIR$/Views/Login/Login.cshtml" />
-        <option value="$PROJECT_DIR$/Models/Beneficiarie.cs" />
-        <option value="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" />
-        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
-        <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
         <option value="$PROJECT_DIR$/Models/VariablesLocales.cs" />
+        <option value="$PROJECT_DIR$/wwwroot/css/site.css" />
+        <option value="E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Controllers/CustomerController.cs" />
+        <option value="$PROJECT_DIR$/Models/MessageBox.cs" />
+        <option value="$PROJECT_DIR$/Models/Beneficiarie.cs" />
+        <option value="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cs" />
+        <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/AccountDataAccessLayer.cs" />
         <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
-        <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
+        <option value="$PROJECT_DIR$/Models/Account.cs" />
+        <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/Views/StateAccount.cshtml.cs" />
+        <option value="$PROJECT_DIR$/Models/StateAccount.cs" />
+        <option value="$PROJECT_DIR$/Views/StateAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Home/Privacy.cshtml" />
+        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Views/About/About.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" />
         <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
+        <option value="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Login/Login.cshtml" />
+        <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
+        <option value="$PROJECT_DIR$/Views/Login/Register.cshtml" />
       </list>
     </option>
   </component>
@@ -193,7 +209,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="RiderIisExpressOptionsPageId" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -273,6 +290,7 @@
       <workItem from="1567662813021" duration="1635000" />
       <workItem from="1567665419518" duration="280000" />
       <workItem from="1567718586894" duration="3550000" />
+      <workItem from="1567728573022" duration="25352000" />
     </task>
     <servers />
   </component>
@@ -352,6 +370,8 @@
     <state x="261" y="54" key="SettingsEditor/1920.1080" />
     <state x="1019" y="128" key="com.intellij.database.view.ui.DbObjectDialog" />
     <state x="1019" y="128" key="com.intellij.database.view.ui.DbObjectDialog/1920.1080" />
+    <state x="425" y="187" key="run.anything.popup" />
+    <state x="425" y="187" key="run.anything.popup/1920.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

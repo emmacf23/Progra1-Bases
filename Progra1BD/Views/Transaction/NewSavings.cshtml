@@ -19,7 +19,7 @@
                         </a>
           
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index">Estado de Cuenta</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="StateAccount">Estado de Cuenta</a>
                             <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="Beneficiaries">Beneficiarios</a>
                             <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="NewSavings">Crear Ahorro</a>
                         </div>
@@ -28,7 +28,7 @@
                         <a class="nav-link" asp-controller="About" asp-action="About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Salir</a>
+                        <a class="nav-link" asp-controller="Login" asp-action="Login">Salir</a>
                     </li>
                 </ul>
             </div>

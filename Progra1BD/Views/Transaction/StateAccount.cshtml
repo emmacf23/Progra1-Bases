@@ -1,7 +1,8 @@
-﻿@model IEnumerable<Progra1BD.Models.Beneficiarie>
+@model IEnumerable<Progra1BD.Models.StateAccount>
+
 
 @{
-    ViewData["Title"] = "Beneficiarios";
+    ViewData["Title"] = "Estado de Cuenta";
 }
 
 <div class="container">
@@ -43,61 +44,19 @@
         <p class="lead">Crea un ahorro automático, que se ajuste a tus necesidades. Edgar no sabe programar, wapo</p>
         <a asp-controller="Transaction" asp-action="NewSavings" class="btn btn-primary btn-lg">Ahorra ya!</a>
     </header>
-
-    <!-- Page Features -->
-    <div class="row text-center">
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="@Url.Content("~/img/laptop-640.jpg")" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Agregar Beneficiario</h4>
-                    <p class="card-text">Sabias que puedes añadir hasta tres beneficiarios a tu cuenta.Otorgandole a cada uno el monton que desees.</p>
-                </div>
-                <div class="card-footer">
-                    <a asp-controller="Transaction" asp-action="AddBeneficiaries" class="btn btn-primary">Agregar Ahora!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="@Url.Content("~/img/desk-640.jpg")" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Actualizar Beneficiarios</h4>
-                    <p class="card-text">Si alguno de tus beneficiarios cambio de telefono, email o simplemente quieres modificar el porcentaje de beneficio. Puedes hacerlo desde aqui. </p>
-                </div>
-                <div class="card-footer">
-                    <a asp-controller="Transaction" asp-action="UpdateBeneficiarie" class="btn btn-primary">Actualizar Ahora!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-                <img class="card-img-top" src="@Url.Content("~/img/team-640.jpg")" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Eliminar Beneficiarios</h4>
-                    <p class="card-text">Aqui puedes eliminar a un beneficiario</p>
-                </div>
-                <div class="card-footer">
-                    <a asp-controller="Transaction" asp-action="DeleteBeneficiarie" class="btn btn-primary">Eliminar Beneficiarios</a>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
+    
     <!-- /.row -->
 
     <table class="table table-bordered table-responsive">
         <thead>
         <tr>
-            <th>Nombre</th>
-            <th>Numero de Identificacion</th>
-            <th>Correo Electronico</th>
-            <th>Porcentaje</th>
+            <th>Identificacion</th>
+            <th>Identifiacion de la Cuenta</th>
             <th>Fecha Inicio</th>
+            <th>Fecha Final</th>
+            <th>Saldo Inicial</th>
+            <th>Saldo Final</th>
+            <th>Saldo Minimo</th>
         </tr>
         </thead>
         <tbody>
@@ -105,28 +64,30 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Name)
+                    @Html.DisplayFor(modelItem => item.ID)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.DocID)
+                    @Html.DisplayFor(modelItem => item.idCuenta)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Email)
+                    @Html.DisplayFor(modelItem => item.fechaInicio)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Porcentaje)
+                    @Html.DisplayFor(modelItem => item.fechaFinal)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.fechaActivo)
+                    @Html.DisplayFor(modelItem => item.saldoInicial)
                 </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.saldoFinal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.saldoMinimo)
+                </td>
+                
             </tr>
         }
         </tbody>
     </table>
 
 </div>
-
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

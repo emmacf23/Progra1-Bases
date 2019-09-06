@@ -9,9 +9,9 @@ namespace Progra1BD.Models
 {
     public class BeneficiarieDataAcessLayer
     {
-                string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+                string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
 
-        //To View all Customers details      
+                //To View all Customers details      
         public IEnumerable<Beneficiarie> GetAllBeneficiaries()
         {
             List<Beneficiarie> lstBeneficiaries = new List<Beneficiarie>();
@@ -35,7 +35,7 @@ namespace Progra1BD.Models
                     beneficiarie.TipoParentesco = Convert.ToInt32(sdr["idTipoParentesco"]);
                     beneficiarie.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
                     beneficiarie.Name = sdr["Nombre"].ToString();
-                    beneficiarie.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
+                    beneficiarie.Date = Convert.ToString(sdr["FechaNacimiento"]);
                     beneficiarie.DocID = Convert.ToInt32(sdr["DocId"]);
                     beneficiarie.Email = sdr["Email"].ToString();
                     beneficiarie.Mobile1 = Convert.ToInt32(sdr["Telefono1"]);
@@ -54,22 +54,24 @@ namespace Progra1BD.Models
         }
 
         //To Add new Customer record      
-        public void AddCustomer(Beneficiarie beneficiarie)
+        public void AddBeneficiarie(Beneficiarie beneficiarie)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 SqlCommand cmd = new SqlCommand("CASP_AddBeneficiario", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@Name", beneficiarie.Name);
-                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
-                cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
                 cmd.Parameters.AddWithValue("@idCuenta", beneficiarie.idCuenta);
+                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
                 cmd.Parameters.AddWithValue("@idTipoParentesco", beneficiarie.TipoParentesco);
-                cmd.Parameters.AddWithValue("@Porcentaje", beneficiarie.Porcentaje);
+                cmd.Parameters.AddWithValue("@Nombre", beneficiarie.Name);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", beneficiarie.Date);
+                cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
+                cmd.Parameters.AddWithValue("@Email", beneficiarie.Email);
                 cmd.Parameters.AddWithValue("@Telefono1", beneficiarie.Mobile1);
                 cmd.Parameters.AddWithValue("@Telefono2", beneficiarie.Mobile2);
-                cmd.Parameters.AddWithValue("@Email", beneficiarie.Email);
+                cmd.Parameters.AddWithValue("@Porcentaje", beneficiarie.Porcentaje);
+
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -77,22 +79,24 @@ namespace Progra1BD.Models
         }
 
         //To Update the records of a particluar Customer    
-        public void UpdateCustomer(Beneficiarie beneficiarie)
+        public void UpdateBeneficiaries(Beneficiarie beneficiarie)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("sp_UpdateCustomer", con);
+                SqlCommand cmd = new SqlCommand("CASP_UpdateBeneficiario", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@Name", beneficiarie.Name);
-                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
-                cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
+                cmd.Parameters.AddWithValue("@id", beneficiarie.ID);
                 cmd.Parameters.AddWithValue("@idCuenta", beneficiarie.idCuenta);
+                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
                 cmd.Parameters.AddWithValue("@idTipoParentesco", beneficiarie.TipoParentesco);
-                cmd.Parameters.AddWithValue("@Porcentaje", beneficiarie.Porcentaje);
+                cmd.Parameters.AddWithValue("@Nombre", beneficiarie.Name);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", beneficiarie.Date);
+                cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
+                cmd.Parameters.AddWithValue("@Email", beneficiarie.Email);
                 cmd.Parameters.AddWithValue("@Telefono1", beneficiarie.Mobile1);
                 cmd.Parameters.AddWithValue("@Telefono2", beneficiarie.Mobile2);
-                cmd.Parameters.AddWithValue("@Email", beneficiarie.Email);
+                cmd.Parameters.AddWithValue("@Porcentaje", beneficiarie.Porcentaje);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -123,7 +127,7 @@ namespace Progra1BD.Models
                     beneficiarie.TipoParentesco = Convert.ToInt32(sdr["idTipoParentesco"]);
                     beneficiarie.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
                     beneficiarie.Name = sdr["Nombre"].ToString();
-                    beneficiarie.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
+                    beneficiarie.Date = Convert.ToString(sdr["FechaNacimiento"]);
                     beneficiarie.DocID = Convert.ToInt32(sdr["DocId"]);
                     beneficiarie.Email = sdr["Email"].ToString();
                     beneficiarie.Mobile1 = Convert.ToInt32(sdr["Telefono1"]);
@@ -139,15 +143,15 @@ namespace Progra1BD.Models
         }
 
         //To Delete the record on a particular Customer    
-        public void DeleteUser(int? id)
+        public void DeleteBeneficiarie(int? id)
         {
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("sp_DeleteUser", con);
+                SqlCommand cmd = new SqlCommand("CASP_DeleteBeneficiario", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@UserId", id);
+                cmd.Parameters.AddWithValue("@id", id);
 
                 con.Open();
                 cmd.ExecuteNonQuery();

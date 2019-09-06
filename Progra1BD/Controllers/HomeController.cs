@@ -10,9 +10,9 @@ namespace Progra1BD.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
-            
+            VariablesLocales.idCuentaActual = id;
             return View();
         }
 

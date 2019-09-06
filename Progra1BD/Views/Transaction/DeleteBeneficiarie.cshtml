@@ -1,0 +1,57 @@
+@model Progra1BD.Models.Beneficiarie
+
+ViewData["Title"] = "Eliminar Beneficiarios";
+}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">Banco Verdun</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
+                </li>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transacciones
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="StateAccount">Estado de Cuenta</a>
+                        <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="Beneficiaries">Beneficiarios</a>
+                        <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="NewSavings">Crear Ahorro</a>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="About" asp-action="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Login" asp-action="Login">Salir</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<div>
+    <h3>Ingrese los datos</h3>
+    <hr/>
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-controller="Transaction" asp-action="DeleteBeneficiarie">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input asp-for="ID" class="form-control" placeholder="ID"/>
+                <span asp-validation-for="ID" class="text-danger"></span>
+            
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Eliminar</button>
+            <hr class="my-4">
+        </div>
+        </form>
+    </div>
+</div>
+</div>

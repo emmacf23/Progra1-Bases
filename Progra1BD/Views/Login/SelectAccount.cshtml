@@ -1,0 +1,89 @@
+@model IEnumerable<Progra1BD.Models.Account>
+
+@{
+    ViewData["Title"] = "Seleccionar Cuenta";
+}
+
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">Banco Verdun</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
+                </li>
+                <div class="dropdown show">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Transacciones
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="StateAccount">Estado de Cuenta</a>
+                        <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="Beneficiaries">Beneficiarios</a>
+                        <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="NewSavings">Crear Ahorro</a>
+                    </div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="About" asp-action="About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Login" asp-action="Login">Salir</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container" style="text-align: center">
+    <table style="padding-left: 200px" class="table table-bordered  table-hover table-responsive">
+        <thead class="thead-light">
+        <tr>
+            <th>Identificacion</th>
+            <th>Identificación del Cliente</th>
+            <th>Tipo Cuenta</th>
+            <th>Numero de Cuenta</th>
+            <th>Saldo de la Cuenta</th>
+            <th>Cuenta</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idTipoCuenta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.numCuenta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.saldo)
+                </td>
+                <td>
+                    <a asp-controller="Home" asp-action="Index" asp-route-id="@item.ID"> Seleccionar</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+</div>
+</body>

@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace Progra1BD.Models
+{
+    public class StateAccountDataAccess_Layer
+    {
+        string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+
+        //To View all Customers details      
+        public IEnumerable<StateAccount> GetAllStateAccounts(int? id)
+        {
+            List<StateAccount> listStateAccounts = new List<StateAccount>();
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("CASP_GetEstadosDeCuenta", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idCuenta", id);
+
+                con.Open();
+                SqlDataReader sdr = cmd.ExecuteReader();
+
+                while (sdr.Read())
+                {
+                    StateAccount stateAccount = new StateAccount();
+
+                    stateAccount.ID = Convert.ToInt32(sdr["id"]);
+                    stateAccount.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
+                    stateAccount.fechaInicio = Convert.ToString(sdr["FechaInicio"]);
+                    stateAccount.fechaFinal = Convert.ToString(sdr["FechaFinal"]);
+                    stateAccount.saldoMinimo = Convert.ToSingle(sdr["SaldoMin"]);
+                    stateAccount.saldoInicial = Convert.ToSingle(sdr["SaldoInicial"]);
+                    stateAccount.saldoFinal = Convert.ToSingle(sdr["SaldoFinal"]);
+                    listStateAccounts.Add(stateAccount);
+                }
+
+                con.Close();
+            }
+
+            return listStateAccounts;
+        }
+    }
+}

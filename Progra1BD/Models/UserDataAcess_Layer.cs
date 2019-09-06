@@ -10,7 +10,7 @@ namespace Progra1BD.Models
 {
     public class UserDataAcess_Layer
     {
-        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+        string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
 
         //To View all Customers details      
         public IEnumerable<User> GetAllUsers()
@@ -48,8 +48,8 @@ namespace Progra1BD.Models
             return lstUsers;
         }
 
-        //To Add new Customer record      
-        public void AddCustomer(User user)
+        //Tow Add new Customer record      
+        public void AddUser(User user)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -71,7 +71,7 @@ namespace Progra1BD.Models
         }
 
         //To Update the records of a particluar Customer    
-        public void UpdateCustomer(User user)
+        public void UpdateUser(User user)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -94,7 +94,7 @@ namespace Progra1BD.Models
         }
 
         //Get the details of a particular Customer    
-        public User GetCustomerData(int? id)
+        public User GetUserData(int? id)
         {
             User user = new User();
 

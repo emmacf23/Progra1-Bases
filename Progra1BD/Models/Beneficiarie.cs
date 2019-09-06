@@ -3,32 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Progra1BD.Models
 {
     public class Beneficiarie
     {
+        [Key]
+        [Required] 
         public int ID { get; set; }
-        
-        [Required(ErrorMessage = "Ingrese su nombre")]
-        [StringLength(15, ErrorMessage = "Nombre debe tener maximo 15 caracteres")]
+        [Required(ErrorMessage =  "El nombre es requerido")]
+        [StringLength(100,ErrorMessage = "Longitud máxima 100")]
         public string Name { get; set; }
-        
-        [Required(ErrorMessage = "Ingrese su tipo de documento")]
-        [StringLength(1, ErrorMessage = "Name should be less than or equal to one character.")]
+        [Required(ErrorMessage =  "La fecha es requerida")]
         public int TypeDocID { get; set; }
-        
-        [Required(ErrorMessage = "Ingrese su numero de documento")]
-        [StringLength(10, ErrorMessage = "Name should be less than or equal to ten characters.")]
+        [Required(ErrorMessage =  "La fecha es requerida")]
         public int DocID { get; set; }
-        
-        [Required(ErrorMessage = "Ingrese el tipo de parentesco")]
-        [StringLength(1, ErrorMessage = "Tiene que tener maximo 1 caracter")]
+        [Required(ErrorMessage =  "La fecha es requerida")]
         public int TipoParentesco { get; set; }
         
         public int idCuenta { get; set; }
         
-        public DateTime Date { get; set; }
+        [Required(ErrorMessage =  "La fecha es requerida")]
+        [StringLength(100,ErrorMessage = "Longitud máxima 100")]
+        public string Date { get; set; }
         
         [Required(ErrorMessage = "Your must provide a Mobile Number")]
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{2})$", ErrorMessage = "Not a valid Mobile number")]
