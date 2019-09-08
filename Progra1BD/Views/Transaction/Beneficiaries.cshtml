@@ -90,8 +90,8 @@
     </div>
     <!-- /.row -->
 
-    <table class="table table-bordered table-responsive" style="border: 0px">
-        <thead class="thead-light">
+    <table class="table table-bordered table-responsive" style="border: 0px; padding-left: 175px">
+        <thead class="table-primary">
         <tr>
             <th>Nombre</th>
             <th>Numero de Identificacion</th>
@@ -103,7 +103,7 @@
         <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="table-secondary">
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>

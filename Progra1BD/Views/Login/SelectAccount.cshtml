@@ -16,7 +16,7 @@
 
 <div class="container" style="text-align: center">
     <table style="padding-left: 150px; border: 0px" class="table table-bordered  table-hover table-responsive">
-        <thead class="thead-light">
+        <thead class="table-primary">
         <tr>
             <th>Identificacion</th>
             <th>Id del Cliente</th>
@@ -29,7 +29,7 @@
         <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="table-secondary">
                 <td>
                     @Html.DisplayFor(modelItem => item.ID)
                 </td>
