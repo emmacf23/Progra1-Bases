@@ -12,13 +12,17 @@ namespace Progra1BD.Models
         [Key]
         [Required] 
         public int ID { get; set; }
+        
         [Required(ErrorMessage =  "El nombre es requerido")]
         [StringLength(100,ErrorMessage = "Longitud máxima 100")]
         public string Name { get; set; }
+        
         [Required(ErrorMessage =  "La fecha es requerida")]
         public int TypeDocID { get; set; }
+        
         [Required(ErrorMessage =  "La fecha es requerida")]
         public int DocID { get; set; }
+        
         [Required(ErrorMessage =  "La fecha es requerida")]
         public int TipoParentesco { get; set; }
         
@@ -39,23 +43,16 @@ namespace Progra1BD.Models
         [Required(ErrorMessage = "Enter Your email")]
         [RegularExpression(@"^[\w-\._\+%]+@(?:[\w-]+\.)+[\w]{2,6}$", ErrorMessage = "Please enter a valid email address")]
         public string Email { get; set; }
-        
-        [Required(ErrorMessage = "Ingrese su username")]
-        [StringLength(15, ErrorMessage = "username should be less than or equal to Fifteen characters.")]
-        public string Username { get; set; }
 
         public bool Activo { get; set; }
         
         [Required(ErrorMessage = "Ingrese el porcentaje")]
         public int Porcentaje { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime fechaActivo { get; set; }
         
+        [DataType(DataType.Date)]
         public DateTime fechaDesactivo { get; set; }
-
-        [Required(ErrorMessage = "Ingrese su nombre")]
-        [StringLength(15, ErrorMessage = "Password should be less than or equal to Fifteen characters.")]
-        public string Password { get; set; }
-        
     }
 }

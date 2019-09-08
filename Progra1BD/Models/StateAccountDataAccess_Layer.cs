@@ -7,7 +7,7 @@ namespace Progra1BD.Models
 {
     public class StateAccountDataAccess_Layer
     {
-        string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
 
         //To View all Customers details      
         public IEnumerable<StateAccount> GetAllStateAccounts(int? id)
@@ -29,8 +29,8 @@ namespace Progra1BD.Models
 
                     stateAccount.ID = Convert.ToInt32(sdr["id"]);
                     stateAccount.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
-                    stateAccount.fechaInicio = Convert.ToString(sdr["FechaInicio"]);
-                    stateAccount.fechaFinal = Convert.ToString(sdr["FechaFinal"]);
+                    stateAccount.fechaInicio = Convert.ToDateTime(sdr["FechaInicio"]);
+                    stateAccount.fechaFinal = Convert.ToDateTime(sdr["FechaFinal"]);
                     stateAccount.saldoMinimo = Convert.ToSingle(sdr["SaldoMin"]);
                     stateAccount.saldoInicial = Convert.ToSingle(sdr["SaldoInicial"]);
                     stateAccount.saldoFinal = Convert.ToSingle(sdr["SaldoFinal"]);

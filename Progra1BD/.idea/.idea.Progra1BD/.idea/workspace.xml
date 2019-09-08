@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44d171-b444-4184-9314-4a10d9afb1ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Register.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Account.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Account.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Beneficiarie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Beneficiarie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/StateAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/StateAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Login/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Login/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.deps.json" afterDir="false" />
@@ -31,15 +40,18 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/About/About.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/About/About.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Home/Privacy.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/SelectAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/SelectAccount.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteBeneficiarie.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteBeneficiarie.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/NewSavings.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/NewSavings.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/StateAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/StateAccount.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateBeneficiarie.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateBeneficiarie.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Progra1BD.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Progra1BD.csproj.nuget.cache" afterDir="false" />
@@ -48,24 +60,6 @@
       <change beforePath="$PROJECT_DIR$/obj/Progra1BD.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Progra1BD.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/browser-sync-ui/lib/plugins/help/help.directive.html" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/browser-sync-ui/lib/plugins/help/help.directive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/browser-sync-ui/lib/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/browser-sync-ui/lib/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/bs-recipes/recipes/grunt.sass/desc.md" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/bs-recipes/recipes/grunt.sass/desc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/bs-recipes/recipes/server.includes/desc.md" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/bs-recipes/recipes/server.includes/desc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/pathfilter/deep_ref/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/pathfilter/deep_ref/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/baz/doom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/baz/doom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/browser_field/a.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/browser_field/a.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/browser_field/b.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/browser_field/b.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/mug.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/mug.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/mug.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/mug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/multirepo/packages/package-b/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/multirepo/packages/package-b/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/other_path/lib/other-lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/other_path/lib/other-lib.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/other_path/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/other_path/root.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/symlinked/_/node_modules/foo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/resolve/test/resolver/symlinked/_/symlink_target/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/rxjs/add/observable/if.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/rxjs/add/observable/if.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/rxjs/add/observable/throw.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/rxjs/add/observable/throw.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/node_modules/rxjs/add/operator/toPromise.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/node_modules/rxjs/add/operator/toPromise.d.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,42 +95,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/StateAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/About/About.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Login/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Beneficiarie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/VariablesLocales.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Login/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Controllers/CustomerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Beneficiarie.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Views/Customer/Create_customer.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Views/Customer/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/About/About.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/AboutController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/StateAccount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/VariablesLocales.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Login/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B4EF600F-4A59-4FE2-865A-8F97F915FB9D/dc/dbb3ca64/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DBC57F52-BDD4-45DA-8B29-C21452AD12F4/55/2b34e891/RazorPage`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Account.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Account.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Login/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/AboutController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -149,7 +139,6 @@
         <option value="$PROJECT_DIR$/Helpers/EmailSender.cs" />
         <option value="$PROJECT_DIR$/Exceptions/GeneralException.cs" />
         <option value="$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1e7f742c-020e-469e-bad7-fe95790de186/console.sql" />
         <option value="$PROJECT_DIR$/wwwroot/css/business-frontpage.css" />
         <option value="$PROJECT_DIR$/Controllers/AboutController.cs" />
@@ -166,32 +155,33 @@
         <option value="$PROJECT_DIR$/wwwroot/css/site.css" />
         <option value="E:/AspNetCoreCURDMVC_Demo/AspNetCoreCURDMVC_Demo/Controllers/CustomerController.cs" />
         <option value="$PROJECT_DIR$/Models/MessageBox.cs" />
-        <option value="$PROJECT_DIR$/Models/Beneficiarie.cs" />
         <option value="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cs" />
-        <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
         <option value="$PROJECT_DIR$/Models/AccountDataAccessLayer.cs" />
-        <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
-        <option value="$PROJECT_DIR$/Models/Account.cs" />
-        <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/Views/StateAccount.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Models/StateAccount.cs" />
         <option value="$PROJECT_DIR$/Views/StateAccount.cshtml" />
         <option value="$PROJECT_DIR$/Views/Home/Privacy.cshtml" />
-        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
         <option value="$PROJECT_DIR$/Views/About/About.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" />
         <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
         <option value="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Login/Login.cshtml" />
         <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
         <option value="$PROJECT_DIR$/Views/Login/Register.cshtml" />
+        <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
+        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/StateAccount.cs" />
+        <option value="$PROJECT_DIR$/Models/Beneficiarie.cs" />
+        <option value="$PROJECT_DIR$/Models/Account.cs" />
+        <option value="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Login/Login.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
       </list>
     </option>
   </component>

@@ -10,7 +10,7 @@ namespace Progra1BD.Models
 {
     public class UserDataAcess_Layer
     {
-        string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
 
         //To View all Customers details      
         public IEnumerable<User> GetAllUsers()
@@ -53,11 +53,12 @@ namespace Progra1BD.Models
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("sp_AddCustomer", con);
+                SqlCommand cmd = new SqlCommand("CASP_AddCliente", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@Name", user.Name);
                 cmd.Parameters.AddWithValue("@idTipoDocumento", user.TypeDocID);
+                cmd.Parameters.AddWithValue("@Nombre", user.Name);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", user.Date);
                 cmd.Parameters.AddWithValue("@DocId", user.DocID);
                 cmd.Parameters.AddWithValue("@username", user.Username);
                 cmd.Parameters.AddWithValue("@Password", user.Password);
