@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44d171-b444-4184-9314-4a10d9afb1ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/LoginController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LoginController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TransactionController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Account.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Account.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Beneficiarie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Beneficiarie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll" afterDir="false" />
@@ -26,13 +22,7 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/SelectAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/SelectAccount.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/StateAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/StateAccount.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateBeneficiarie.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateBeneficiarie.g.cshtml.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,17 +135,17 @@
         <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" />
         <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/Beneficiarie.cs" />
+        <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
         <option value="$PROJECT_DIR$/Models/User.cs" />
+        <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
         <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
         <option value="$PROJECT_DIR$/Models/Account.cs" />
         <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
-        <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
-        <option value="$PROJECT_DIR$/Models/Beneficiarie.cs" />
         <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
+        <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" />
-        <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
       </list>
     </option>
   </component>
@@ -258,7 +248,8 @@
       <workItem from="1568086736139" duration="670000" />
       <workItem from="1568141848064" duration="95000" />
       <workItem from="1568143000868" duration="2031000" />
-      <workItem from="1568179054482" duration="3694000" />
+      <workItem from="1568179054482" duration="3824000" />
+      <workItem from="1568225589490" duration="1786000" />
     </task>
     <servers />
   </component>

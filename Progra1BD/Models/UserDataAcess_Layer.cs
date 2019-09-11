@@ -30,7 +30,7 @@ namespace Progra1BD.Models
                     User user = new User();
 
                     user.ID = Convert.ToInt32(sdr["id"]);
-                    user.TypeDocID = Convert.ToString(sdr["tipoDocId"]);
+                    user.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
                     user.Name = sdr["Nombre"].ToString();
                     user.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
                     user.DocID = Convert.ToInt32(sdr["DocId"]);
@@ -56,7 +56,7 @@ namespace Progra1BD.Models
                 SqlCommand cmd = new SqlCommand("CLSP_AddCliente", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@tipoDocId", user.TypeDocID);
+                cmd.Parameters.AddWithValue("@idTipoDoc", user.TypeDocID);
                 cmd.Parameters.AddWithValue("@Nombre", user.Name);
                 cmd.Parameters.AddWithValue("@FechaNacimiento", user.Date);
                 cmd.Parameters.AddWithValue("@DocId", user.DocID);
@@ -113,7 +113,7 @@ namespace Progra1BD.Models
                 {
 
                     user.ID = Convert.ToInt32(sdr["id"]);
-                    user.TypeDocID = Convert.ToString(sdr["idTipoDocumento"]);
+                    user.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
                     user.Name = sdr["Name"].ToString();
                     user.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
                     user.DocID = Convert.ToInt32(sdr["DocId"]);

@@ -29,7 +29,7 @@ namespace Progra1BD.Models
 
                     account.ID = Convert.ToInt32(sdr["id"]);
                     account.idCliente = Convert.ToInt32(sdr["idCliente"]);
-                    account.idTipoCuenta = Convert.ToString(sdr["tipoCuenta"]);
+                    account.idTipoCuenta = Convert.ToInt32(sdr["idTipoCuenta"]);
                     account.numCuenta = Convert.ToInt32(sdr["NumeroCuenta"]);
                     account.saldo = Convert.ToSingle(sdr["Saldo"]);
                     listAccounts.Add(account);

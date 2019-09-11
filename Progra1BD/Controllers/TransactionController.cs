@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
@@ -10,8 +10,8 @@ using Progra1BD.Models;
 {
     public class TransactionController : Controller
     {
-        string _Name, _Email, _Date, _TypeDoc, _TypeP;
-        private int _DocId, _Percentage, _Mobile1, _Mobile2,_ID;
+        string _Name, _Email, _Date;
+        private int _TypeDoc, _TypeP, _DocId, _Percentage, _Mobile1, _Mobile2,_ID;
 
         BeneficiarieDataAcessLayer objBeneficiarie = new BeneficiarieDataAcessLayer();
         StateAccountDataAccess_Layer objState = new StateAccountDataAccess_Layer();
@@ -33,8 +33,8 @@ using Progra1BD.Models;
         {
             _Name = Convert.ToString(formCollection["Name"]);
             _Email = Convert.ToString(formCollection["Email"]);
-            _TypeDoc = Convert.ToString(formCollection["TypeDocID"]);
-            _TypeP = Convert.ToString(formCollection["TipoParentesco"]);
+            _TypeDoc = Convert.ToInt32(formCollection["TypeDocID"]);
+            _TypeP = Convert.ToInt32(formCollection["TipoParentesco"]);
             _DocId = Convert.ToInt32(formCollection["DocID"]);
             _Percentage = Convert.ToInt32(formCollection["Porcentaje"]);
             _Mobile1 = Convert.ToInt32(formCollection["Mobile1"]);
@@ -53,7 +53,7 @@ using Progra1BD.Models;
             beneficiarie.Date = _Date;
             if (ModelState.IsValid)
             {
-                beneficiarie.numeroCuenta = VariablesLocales.idCuentaActual;
+                beneficiarie.idCuenta = VariablesLocales.idCuentaActual;
                 objBeneficiarie.AddBeneficiarie(beneficiarie);
                 return RedirectToAction("Beneficiaries");
             }
@@ -80,8 +80,8 @@ using Progra1BD.Models;
             _Name = Convert.ToString(formCollection["Name"]);
             _ID = Convert.ToInt32(formCollection["ID"]);
             _Email = Convert.ToString(formCollection["Email"]);
-            _TypeDoc = Convert.ToString(formCollection["TypeDocID"]);
-            _TypeP = Convert.ToString(formCollection["TipoParentesco"]);
+            _TypeDoc = Convert.ToInt32(formCollection["TypeDocID"]);
+            _TypeP = Convert.ToInt32(formCollection["TipoParentesco"]);
             _DocId = Convert.ToInt32(formCollection["DocID"]);
             _Percentage = Convert.ToInt32(formCollection["Porcentaje"]);
             _Mobile1 = Convert.ToInt32(formCollection["Mobile1"]);
@@ -104,7 +104,7 @@ using Progra1BD.Models;
                 objBeneficiarie.UpdateBeneficiaries(beneficiarie);
                 return RedirectToAction("Beneficiaries");
             }
-            return new RedirectToActionResult("Index", "Home",new {user = beneficiarie.numeroCuenta});
+            return new RedirectToActionResult("Index", "Home",new {user = beneficiarie.idCuenta});
         }
 
         [HttpGet]

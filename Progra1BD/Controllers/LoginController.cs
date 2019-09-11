@@ -29,7 +29,7 @@ using System.Diagnostics;
             {
                 if (user.Username ==_user && user.Password ==_password)
                 {
-                    VariablesLocales.idClienteActual = user.DocID;
+                    VariablesLocales.idClienteActual = user.ID;
                     return new RedirectToActionResult("SelectAccount", "Login",new {user = _user});
                 }
             }

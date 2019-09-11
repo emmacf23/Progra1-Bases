@@ -13,7 +13,7 @@ namespace Progra1BD.Models
         public string Name { get; set; }
         [Required(ErrorMessage = "Enter Your TypeId")]
         [StringLength(1, ErrorMessage = "Name should be less than or equal to one character.")]
-        public string TypeDocID { get; set; }
+        public int TypeDocID { get; set; }
         [Required(ErrorMessage = "Enter Your DocID")]
         [StringLength(10, ErrorMessage = "Name should be less than or equal to ten characters.")]
         public int DocID { get; set; }
