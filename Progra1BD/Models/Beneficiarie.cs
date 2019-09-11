@@ -18,15 +18,15 @@ namespace Progra1BD.Models
         public string Name { get; set; }
         
         [Required(ErrorMessage =  "La fecha es requerida")]
-        public int TypeDocID { get; set; }
+        public string TypeDocID { get; set; }
         
         [Required(ErrorMessage =  "La fecha es requerida")]
         public int DocID { get; set; }
         
         [Required(ErrorMessage =  "La fecha es requerida")]
-        public int TipoParentesco { get; set; }
+        public string TipoParentesco { get; set; }
         
-        public int idCuenta { get; set; }
+        public int numeroCuenta { get; set; }
         
         [Required(ErrorMessage =  "La fecha es requerida")]
         [StringLength(100,ErrorMessage = "Longitud máxima 100")]

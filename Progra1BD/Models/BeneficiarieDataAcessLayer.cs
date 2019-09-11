@@ -9,7 +9,7 @@ namespace Progra1BD.Models
 {
     public class BeneficiarieDataAcessLayer
     {
-                string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+                string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
                 //To View all Customers details      
         public IEnumerable<Beneficiarie> GetAllBeneficiaries()
@@ -18,10 +18,10 @@ namespace Progra1BD.Models
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_GetBeneficiarios", con);
+                SqlCommand cmd = new SqlCommand("BSP_GetBeneficiarios", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@idCuenta", VariablesLocales.idCuentaActual);
+                cmd.Parameters.AddWithValue("@numCuenta", VariablesLocales.idCuentaActual);
 
                 con.Open();
                 SqlDataReader sdr = cmd.ExecuteReader();
@@ -31,9 +31,9 @@ namespace Progra1BD.Models
                     Beneficiarie beneficiarie = new Beneficiarie();
                     
                     beneficiarie.ID = Convert.ToInt32(sdr["id"]);
-                    beneficiarie.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
-                    beneficiarie.TipoParentesco = Convert.ToInt32(sdr["idTipoParentesco"]);
-                    beneficiarie.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
+                    beneficiarie.TypeDocID = Convert.ToString(sdr["tipoDocumento"]);
+                    beneficiarie.TipoParentesco = Convert.ToString(sdr["tipoParentesco"]);
+                    beneficiarie.numeroCuenta = Convert.ToInt32(sdr["numeroCuenta"]);
                     beneficiarie.Name = sdr["Nombre"].ToString();
                     beneficiarie.Date = Convert.ToString(sdr["FechaNacimiento"]);
                     beneficiarie.DocID = Convert.ToInt32(sdr["DocId"]);
@@ -58,12 +58,12 @@ namespace Progra1BD.Models
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_AddBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("BSP_AddBeneficiario", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@idCuenta", beneficiarie.idCuenta);
-                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
-                cmd.Parameters.AddWithValue("@idTipoParentesco", beneficiarie.TipoParentesco);
+                cmd.Parameters.AddWithValue("@numCuenta", beneficiarie.numeroCuenta);
+                cmd.Parameters.AddWithValue("@tipoDocumento", beneficiarie.TypeDocID);
+                cmd.Parameters.AddWithValue("@tipoParentesco", beneficiarie.TipoParentesco);
                 cmd.Parameters.AddWithValue("@Nombre", beneficiarie.Name);
                 cmd.Parameters.AddWithValue("@FechaNacimiento", beneficiarie.Date);
                 cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
@@ -83,13 +83,13 @@ namespace Progra1BD.Models
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_UpdateBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("BSP_UpdateBeneficiario", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id", beneficiarie.ID);
-                cmd.Parameters.AddWithValue("@idCuenta", beneficiarie.idCuenta);
-                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
-                cmd.Parameters.AddWithValue("@idTipoParentesco", beneficiarie.TipoParentesco);
+                //cmd.Parameters.AddWithValue("@id", beneficiarie.ID);
+                cmd.Parameters.AddWithValue("@numCuenta", beneficiarie.numeroCuenta);
+                cmd.Parameters.AddWithValue("@tipoDocumento", beneficiarie.TypeDocID);
+                cmd.Parameters.AddWithValue("@tipoParentesco", beneficiarie.TipoParentesco);
                 cmd.Parameters.AddWithValue("@Nombre", beneficiarie.Name);
                 cmd.Parameters.AddWithValue("@FechaNacimiento", beneficiarie.Date);
                 cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
@@ -123,9 +123,9 @@ namespace Progra1BD.Models
                 {
 
                     beneficiarie.ID = Convert.ToInt32(sdr["id"]);
-                    beneficiarie.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
-                    beneficiarie.TipoParentesco = Convert.ToInt32(sdr["idTipoParentesco"]);
-                    beneficiarie.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
+                    beneficiarie.TypeDocID = Convert.ToString(sdr["idTipoDocumento"]);
+                    beneficiarie.TipoParentesco = Convert.ToString(sdr["idTipoParentesco"]);
+                    beneficiarie.numeroCuenta = Convert.ToInt32(sdr["idCuenta"]);
                     beneficiarie.Name = sdr["Nombre"].ToString();
                     beneficiarie.Date = Convert.ToString(sdr["FechaNacimiento"]);
                     beneficiarie.DocID = Convert.ToInt32(sdr["DocId"]);
@@ -148,10 +148,10 @@ namespace Progra1BD.Models
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_DeleteBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("BSP_DeleteBeneficiario", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@docId", id);
 
                 con.Open();
                 cmd.ExecuteNonQuery();

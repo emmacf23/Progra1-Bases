@@ -6,7 +6,7 @@ namespace Progra1BD.Models
         
         public int idCliente { get; set; }
         
-        public int idTipoCuenta { get; set; }
+        public string idTipoCuenta { get; set; }
         
         public int numCuenta { get; set; }
         

@@ -7,7 +7,7 @@ namespace Progra1BD.Models
 {
     public class StateAccountDataAccess_Layer
     {
-        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
         //To View all Customers details      
         public IEnumerable<StateAccount> GetAllStateAccounts(int? id)
@@ -16,7 +16,7 @@ namespace Progra1BD.Models
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_GetEstadosDeCuenta", con);
+                SqlCommand cmd = new SqlCommand("ECSP_GetEstadosDeCuenta", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idCuenta", id);
 

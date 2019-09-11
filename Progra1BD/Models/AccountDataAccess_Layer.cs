@@ -7,7 +7,7 @@ namespace Progra1BD.Models
 {
     public class AccountDataAccess_Layer
     {
-        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
         //To View all Customers details      
         public IEnumerable<Account> GetAllAccounts(int? id)
@@ -29,7 +29,7 @@ namespace Progra1BD.Models
 
                     account.ID = Convert.ToInt32(sdr["id"]);
                     account.idCliente = Convert.ToInt32(sdr["idCliente"]);
-                    account.idTipoCuenta = Convert.ToInt32(sdr["idTipoCuenta"]);
+                    account.idTipoCuenta = Convert.ToString(sdr["tipoCuenta"]);
                     account.numCuenta = Convert.ToInt32(sdr["NumeroCuenta"]);
                     account.saldo = Convert.ToSingle(sdr["Saldo"]);
                     listAccounts.Add(account);

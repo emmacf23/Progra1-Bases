@@ -10,7 +10,7 @@ namespace Progra1BD.Models
 {
     public class UserDataAcess_Layer
     {
-        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Ps3owner";
+        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
         //To View all Customers details      
         public IEnumerable<User> GetAllUsers()
@@ -19,7 +19,7 @@ namespace Progra1BD.Models
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_GetClientes", con);
+                SqlCommand cmd = new SqlCommand("CLSP_GetClientes", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 con.Open();
@@ -30,7 +30,7 @@ namespace Progra1BD.Models
                     User user = new User();
 
                     user.ID = Convert.ToInt32(sdr["id"]);
-                    user.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
+                    user.TypeDocID = Convert.ToString(sdr["tipoDocId"]);
                     user.Name = sdr["Nombre"].ToString();
                     user.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
                     user.DocID = Convert.ToInt32(sdr["DocId"]);
@@ -53,10 +53,10 @@ namespace Progra1BD.Models
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("CASP_AddCliente", con);
+                SqlCommand cmd = new SqlCommand("CLSP_AddCliente", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@idTipoDocumento", user.TypeDocID);
+                cmd.Parameters.AddWithValue("@tipoDocId", user.TypeDocID);
                 cmd.Parameters.AddWithValue("@Nombre", user.Name);
                 cmd.Parameters.AddWithValue("@FechaNacimiento", user.Date);
                 cmd.Parameters.AddWithValue("@DocId", user.DocID);
@@ -113,7 +113,7 @@ namespace Progra1BD.Models
                 {
 
                     user.ID = Convert.ToInt32(sdr["id"]);
-                    user.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
+                    user.TypeDocID = Convert.ToString(sdr["idTipoDocumento"]);
                     user.Name = sdr["Name"].ToString();
                     user.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
                     user.DocID = Convert.ToInt32(sdr["DocId"]);

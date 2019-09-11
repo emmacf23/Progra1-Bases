@@ -57,9 +57,9 @@ ViewData["Title"] = "Añadir Beneficiarios";
                     <i class="fas fa-id-card"></i>
                     <select asp-for="TypeDocID" class="form-control">
                         <option value="">Tipo Identificacion</option>
-                        <option value=1>Cedula</option>
-                        <option value=2>Pasaporte</option>
-                        <option value=3>Extranjero</option>
+                        <option value="Cedula Nacional">Cedula</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                        <option value="Cedula Extranjera">Extranjero</option>
                     </select>
                     <span asp-validation-for="TypeDocID" class="text-danger"></span>
                 </div>
@@ -72,9 +72,13 @@ ViewData["Title"] = "Añadir Beneficiarios";
                     <i class="fas fa-user-friends"></i>
                     <select asp-for="TipoParentesco" class="form-control">
                         <option value="">Tipo Parentesco</option>
-                        <option value=1>Papa</option>
-                        <option value=2>Mama</option>
-                        <option value=3>Otro</option>
+                        <option value="Padre">Padre</option>
+                        <option value="Madre">Madre</option>
+                        <option value="Conyuge">Conyuge</option>
+                        <option value="Hermano">Hermano</option>
+                        <option value="Hermana">Hermana</option>
+                        <option value="Hijo">Hijo</option>
+                        <option value="Hija">Hija</option>
                     </select>
                     <span asp-validation-for="TipoParentesco" class="text-danger"></span>
                 </div>
