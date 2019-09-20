@@ -36,6 +36,13 @@ ViewData["Title"] = "Añadir Beneficiarios";
 </nav>
 <br>
 <br>
+@if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"].Errors.Count > 0)
+{
+    <div class="alert alert-danger
+                   <strong>Error!</strong> danger">
+        @ViewData.ModelState["Error"].Errors.First().ErrorMessage
+    </div>
+}
 <div>
     <h3>Ingrese los datos</h3>
     <hr/>

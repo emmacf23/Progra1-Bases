@@ -33,7 +33,10 @@ using System.Diagnostics;
                     return new RedirectToActionResult("SelectAccount", "Login",new {user = _user});
                 }
             }
-            return new RedirectToActionResult("AddBeneficiaries", "Transaction", new {mensaje = _user}); 
+            
+            ModelState.AddModelError("Error", "Datos Incorrectos. Intente de Nuevo");
+            return View("Login");
+
         }
 
         public IActionResult SelectAccount()

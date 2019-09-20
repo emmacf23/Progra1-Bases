@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Progra1BD.Models.Beneficiarie>
+﻿@using Microsoft.CodeAnalysis.CSharp.Syntax
+@model IEnumerable<Progra1BD.Models.Beneficiarie>
 
 @{
     ViewData["Title"] = "Beneficiarios";
@@ -37,6 +38,15 @@
             </div>
         </div>
     </nav>
+    
+    @if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"].Errors.Count > 0)
+    {
+        <div class="alert alert-info">
+            @ViewData.ModelState["Error"].Errors.First().ErrorMessage
+        </div>
+    }
+    
+
     <!-- Jumbotron Header -->
     <header class="jumbotron my-4">
         <h1 class="display-3">Nunca había sido tan fácil!</h1>

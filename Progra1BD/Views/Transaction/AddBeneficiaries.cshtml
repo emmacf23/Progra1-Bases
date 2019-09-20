@@ -36,6 +36,13 @@ ViewData["Title"] = "Añadir Beneficiarios";
 </nav>
 <br>
 <br>
+@if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"].Errors.Count > 0)
+{
+    <div class="alert alert-danger
+                   <strong>Error!</strong> danger">
+        @ViewData.ModelState["Error"].Errors.First().ErrorMessage
+    </div>
+}
 <div>
     <h3>Ingrese los datos</h3>
     <hr/>
@@ -45,12 +52,12 @@ ViewData["Title"] = "Añadir Beneficiarios";
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <i class="fas fa-user"></i>
-                    <input asp-for="Name" class="form-control" placeholder="Nombre"/>
+                    <input asp-for="Name" class="form-control" placeholder="Nombre" required/>
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <i class="fas fa-at"></i>
-                    <input asp-for="Email" class="form-control" placeholder="Correo Electronico"/>
+                    <input asp-for="Email" class="form-control" placeholder="Correo Electronico" required/>
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
@@ -65,7 +72,7 @@ ViewData["Title"] = "Añadir Beneficiarios";
                 </div>
                 <div class="form-group">
                     <i class="fas fa-id-card"></i>
-                    <input asp-for="DocID" type="tel"class="form-control" placeholder="Documento de Identificacion"/>
+                    <input asp-for="DocID" type="tel"class="form-control" placeholder="Documento de Identificacion" required/>
                     <span asp-validation-for="DocID" class="text-danger"></span>
                 </div>
                 <div class="form-group">
@@ -85,23 +92,23 @@ ViewData["Title"] = "Añadir Beneficiarios";
                 <div class="form-group">
                     <i class="fas fa-percentage"></i>
                     <label asp-for="Porcentaje" class="control-label"></label>
-                    <input asp-for="Porcentaje" class="form-control" placeholder="Porcentaje" min="0" max="100"/>
+                    <input asp-for="Porcentaje" class="form-control" placeholder="Porcentaje" min="0" max="100" required/>
                     <span asp-validation-for="Porcentaje" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <i class="fas fa-phone"></i>
-                    <input asp-for="Mobile1"  type="tel"class="form-control" placeholder="Numero de Telefono 1" maxlength="8"/>
+                    <input asp-for="Mobile1" type="tel"class="form-control" placeholder="Numero de Telefono 1" maxlength="8" required/>
                     <span asp-validation-for="Mobile1" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">
                     <i class="fas fa-phone"></i>
-                    <input asp-for="Mobile2"  type="tel" class="form-control" placeholder="Numero de Telefono 2" maxlength="8"/>
+                    <input asp-for="Mobile2" type="tel" class="form-control" placeholder="Numero de Telefono 2" maxlength="8" required/>
                     <span asp-validation-for="Mobile2" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <i class="fas fa-calendar-week"></i>
-                    <input asp-for="Date" min="1960-02-06" max="2002-03-05" type="Date" class="form-control"/>
+                    <input asp-for="Date" min="1960-02-06" max="2002-03-05" type="Date" class="form-control" required/>
                     <span asp-validation-for="Date" class="text-danger"></span>
                 </div>
                 <div class="form-group">
@@ -111,4 +118,3 @@ ViewData["Title"] = "Añadir Beneficiarios";
         </div>
     </div>
 </div>
-

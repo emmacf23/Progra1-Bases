@@ -9,7 +9,7 @@ namespace Progra1BD.Models
 {
     public class BeneficiarieDataAcessLayer
     {
-                string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
+                string connectionString = @"Server=172.19.52.84,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
                 //To View all Customers details      
         public IEnumerable<Beneficiarie> GetAllBeneficiaries()
@@ -59,7 +59,7 @@ namespace Progra1BD.Models
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("BSP_AddBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("BSP_AddBeneficiario2", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@idCuenta", beneficiarie.idCuenta);

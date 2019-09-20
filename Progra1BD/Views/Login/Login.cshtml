@@ -1,12 +1,17 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Login";
 }
-
 
 <div class="container">
     <div class="row">
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <br>
+            @if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"].Errors.Count > 0)
+            {
+                <div class="alert alert-dismissible alert-danger">
+                    @ViewData.ModelState["Error"].Errors.First().ErrorMessage
+                </div>
+            }
             <div class="card card-signin my-5">
                 <div class="card-body">
                     <h5 class="card-title text-center">Sign In</h5>
@@ -18,8 +23,8 @@
                         </div>
 
                         <div class="form-label-group">
-                            
-                            <i class="fas fa-lock"></i>   <label for="inputPassword">Password</label>
+
+                            <i class="fas fa-lock"></i> <label for="inputPassword">Password</label>
                             <input type="password" name="inputPassword" class="form-control" placeholder=" Password" required>
                         </div>
 
@@ -36,6 +41,4 @@
         </div>
     </div>
 </div>
-
-
 
