@@ -45,14 +45,47 @@
             @ViewData.ModelState["Error"].Errors.First().ErrorMessage
         </div>
     }
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     
-
-    <!-- Jumbotron Header -->
-    <header class="jumbotron my-4">
-        <h1 class="display-3">Nunca había sido tan fácil!</h1>
-        <p class="lead">Crea un ahorro automático, que se ajuste a tus necesidades. </p>
-        <a asp-controller="Transaction" asp-action="NewSavings" class="btn btn-primary btn-lg">Ahorra ya!</a>
-    </header>
+    <table class="table table-bordered table-responsive" style="border: 0px; padding-left: 175px">
+        <thead class="table-primary">
+        <tr>
+            <th>Nombre</th>
+            <th>Numero de Identificacion</th>
+            <th>Correo Electronico</th>
+            <th>Porcentaje</th>
+            <th>Fecha Inicio</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-secondary">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DocID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Porcentaje)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaActivo)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <br/>
+    <br/>
 
     <!-- Page Features -->
     <div class="row text-center">
@@ -99,40 +132,6 @@
 
     </div>
     <!-- /.row -->
-
-    <table class="table table-bordered table-responsive" style="border: 0px; padding-left: 175px">
-        <thead class="table-primary">
-        <tr>
-            <th>Nombre</th>
-            <th>Numero de Identificacion</th>
-            <th>Correo Electronico</th>
-            <th>Porcentaje</th>
-            <th>Fecha Inicio</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in Model)
-        {
-            <tr class="table-secondary">
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DocID)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Porcentaje)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.fechaActivo)
-                </td>
-            </tr>
-        }
-        </tbody>
-    </table>
 
 </div>
 

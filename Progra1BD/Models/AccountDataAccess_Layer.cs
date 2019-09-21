@@ -7,7 +7,7 @@ namespace Progra1BD.Models
 {
     public class AccountDataAccess_Layer
     {
-        string connectionString = @"Server=172.19.52.84,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
+        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
         //To View all Customers details      
         public IEnumerable<Account> GetAllAccounts(int? id)
