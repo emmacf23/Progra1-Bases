@@ -4,5 +4,6 @@ namespace Progra1BD.Models
     {
         public static int idClienteActual;
         public static int idCuentaActual;
+        public static int idEstadoCuentaActual;
     }
 }

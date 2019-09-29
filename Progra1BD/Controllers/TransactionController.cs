@@ -14,6 +14,7 @@ namespace Progra1BD.Controllers
         List<Beneficiarie> listBeneficiaries = new List<Beneficiarie>();
         BeneficiarieDataAcessLayer objBeneficiarie = new BeneficiarieDataAcessLayer();
         StateAccountDataAccess_Layer objState = new StateAccountDataAccess_Layer();
+        MovementAccountDataAccess_Layer objMovement = new MovementAccountDataAccess_Layer();
 
         public IActionResult Beneficiaries()
         {
@@ -176,6 +177,14 @@ namespace Progra1BD.Controllers
             List<StateAccount> listStateAccount = new List<StateAccount>();
             listStateAccount = objState.GetAllStateAccounts(VariablesLocales.idCuentaActual).ToList();
             return View(listStateAccount);
+        }
+        
+        public IActionResult Movements(int id)
+        {
+            VariablesLocales.idEstadoCuentaActual = id;
+            List<Movement> listMovement = new List<Movement>();
+            listMovement = objMovement.GetAllMovements(VariablesLocales.idEstadoCuentaActual).ToList();
+            return View(listMovement);
         }
 
         public int sumaP()
