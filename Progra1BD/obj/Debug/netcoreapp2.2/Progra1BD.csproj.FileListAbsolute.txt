@@ -53,7 +53,6 @@
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs
-/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/NewSavings.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.RazorTargetAssemblyInfo.cache
@@ -107,3 +106,7 @@ C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj
 C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.pdb
 C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CopyComplete
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Movements.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/ObjetiveAccount.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddObjetiveAccount.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteObjetiveAccount.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateObjetiveAccount.g.cshtml.cs

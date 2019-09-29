@@ -21,6 +21,8 @@
         <e p="ErrorViewModel.cs" t="Include" />
         <e p="Movement.cs" t="Include" />
         <e p="MovementDataAccess_Layer.cs" t="Include" />
+        <e p="ObjetiveAccount.cs" t="Include" />
+        <e p="ObjetiveAccountDataAccess_Layer.cs" t="Include" />
         <e p="StateAccount.cs" t="Include" />
         <e p="StateAccountDataAccess_Layer.cs" t="Include" />
         <e p="User.cs" t="Include" />
@@ -64,12 +66,15 @@
         </e>
         <e p="Transaction" t="Include">
           <e p="AddBeneficiaries.cshtml" t="Include" />
+          <e p="AddObjetiveAccount.cshtml" t="Include" />
           <e p="Beneficiaries.cshtml" t="Include" />
           <e p="DeleteBeneficiarie.cshtml" t="Include" />
+          <e p="DeleteObjetiveAccount.cshtml" t="Include" />
           <e p="Movements.cshtml" t="Include" />
-          <e p="NewSavings.cshtml" t="Include" />
+          <e p="ObjetiveAccount.cshtml" t="Include" />
           <e p="StateAccount.cshtml" t="Include" />
           <e p="UpdateBeneficiarie.cshtml" t="Include" />
+          <e p="UpdateObjetiveAccount.cshtml" t="Include" />
         </e>
       </e>
       <e p="wwwroot" t="Include">

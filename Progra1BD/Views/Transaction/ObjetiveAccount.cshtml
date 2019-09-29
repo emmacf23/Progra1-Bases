@@ -1,0 +1,146 @@
+@using Microsoft.CodeAnalysis.CSharp.Syntax
+@model IEnumerable<Progra1BD.Models.ObjetiveAccount>
+
+@{
+    ViewData["Title"] = "Cuentas Objetivo";
+}
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Banco Verdun</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
+                    </li>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Transacciones
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="StateAccount">Estado de Cuenta</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="Beneficiaries">Beneficiarios</a>
+                            <a class="dropdown-item" asp-area="" asp-controller="Transaction" asp-action="ObjetiveAccount">Cuenta Objetivo</a>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="About" asp-action="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Login" asp-action="Login">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    @if (!ViewData.ModelState.IsValid && ViewData.ModelState["Error"].Errors.Count > 0)
+    {
+        <div class="alert alert-info">
+            @ViewData.ModelState["Error"].Errors.First().ErrorMessage
+        </div>
+    }
+    <br/>
+    <br/>
+    <br/>
+    <h3>Cuentas Objetivo</h3>
+    <br/>
+    
+    <table class="table table-bordered table-responsive" style="border: 0px; padding-left: 175px">
+        <thead class="table-primary">
+        <tr>
+            <th>ID</th>
+            <th>Id de la Cuenta</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Final</th>
+            <th>Saldo</th>
+            <th>Monto Ahorro</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="table-secondary">
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idCuenta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaInicio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaFinal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.saldo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.montoAhorro)
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    
+    <br/>
+    <br/>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="@Url.Content("~/img/laptop-640.jpg")" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Agregar Cuenta Objetivo</h4>
+                    <p class="card-text">Agrega objetivos a tu cuenta para que puedas lograr todos tus sueños, tu dilo nosotros lo ahorramos.</p>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Transaction" asp-action="AddObjetiveAccount" class="btn btn-primary">Agregar Ahora!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="@Url.Content("~/img/desk-640.jpg")" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Actualizar Cuenta Objetivo</h4>
+                    <p class="card-text">Si deseas modificar lo que deseas ahorrar o el motivo, puedes hacerlo desde aqui. </p>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Transaction" asp-action="UpdateBeneficiarie" class="btn btn-primary">Actualizar Ahora!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="@Url.Content("~/img/team-640.jpg")" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Eliminar Cuenta Objetivo</h4>
+                    <p class="card-text">Aqui puedes eliminar un objetivo de tu cuenta.</p>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="Transaction" asp-action="DeleteBeneficiarie" class="btn btn-primary">Eliminar ahora!</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /.row -->
+
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

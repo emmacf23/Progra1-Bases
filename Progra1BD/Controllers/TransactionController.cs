@@ -15,6 +15,7 @@ namespace Progra1BD.Controllers
         BeneficiarieDataAcessLayer objBeneficiarie = new BeneficiarieDataAcessLayer();
         StateAccountDataAccess_Layer objState = new StateAccountDataAccess_Layer();
         MovementAccountDataAccess_Layer objMovement = new MovementAccountDataAccess_Layer();
+        ObjetiveAccountAccountDataAccess_Layer objObjetive = new ObjetiveAccountAccountDataAccess_Layer();
 
         public IActionResult Beneficiaries()
         {
@@ -86,7 +87,7 @@ namespace Progra1BD.Controllers
         }
 
 
-        public IActionResult NewSavings()
+        public IActionResult AddObjetiveAccount()
         {
             return View();
         }
@@ -185,6 +186,13 @@ namespace Progra1BD.Controllers
             List<Movement> listMovement = new List<Movement>();
             listMovement = objMovement.GetAllMovements(VariablesLocales.idEstadoCuentaActual).ToList();
             return View(listMovement);
+        }
+        
+        public IActionResult ObjetiveAccount()
+        {
+            List<ObjetiveAccount> listObjetiveAccounts = new List<ObjetiveAccount>();
+            listObjetiveAccounts = objObjetive.GetAllObjetiveAccounts(VariablesLocales.idCuentaActual).ToList();
+            return View(listObjetiveAccounts);
         }
 
         public int sumaP()
