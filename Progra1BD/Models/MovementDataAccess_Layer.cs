@@ -29,6 +29,8 @@ namespace Progra1BD.Models
                     
                     movement.ID = Convert.ToInt32(sdr["id"]);
                     movement.idEstadoCuenta = Convert.ToInt32(sdr["idEstadoCuenta"]);
+                    movement.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
+                    movement.idTipoMovimiento = Convert.ToInt32(sdr["idTipoMovimiento"]);
                     movement.fecha = Convert.ToDateTime(sdr["Fecha"]);
                     movement.monto = Convert.ToSingle(sdr["Monto"]);
                     movement.nuevoSaldo = Convert.ToSingle(sdr["NuevoSaldo"]);

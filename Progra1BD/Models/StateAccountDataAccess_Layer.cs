@@ -34,6 +34,7 @@ namespace Progra1BD.Models
                     stateAccount.saldoMinimo = Convert.ToSingle(sdr["SaldoMin"]);
                     stateAccount.saldoInicial = Convert.ToSingle(sdr["SaldoInicial"]);
                     stateAccount.saldoFinal = Convert.ToSingle(sdr["SaldoFinal"]);
+                    stateAccount.intereses = Convert.ToInt32(sdr["Intereses"]);
                     listStateAccounts.Add(stateAccount);
                 }
 

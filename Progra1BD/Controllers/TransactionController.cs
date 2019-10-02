@@ -129,7 +129,6 @@ namespace Progra1BD.Controllers
             {
                 if (sumaP() - findById(_ID) + _Percentage == 100)
                 {
-                    Console.WriteLine("Entre aqui");
                     objBeneficiarie.UpdateBeneficiaries(beneficiarie);
                     ModelState.AddModelError("Error", "Usuario" + _Name + " Actualizado con exito.");
                     return RedirectToAction("Beneficiaries","Transaction");
@@ -137,7 +136,6 @@ namespace Progra1BD.Controllers
                 
                 if (sumaP() - findById(_ID) + _Percentage < 100)
                 {
-                    Console.WriteLine("Entre");
                     objBeneficiarie.UpdateBeneficiaries(beneficiarie);
                     ModelState.AddModelError("Error",
                         "La suma de los porcentajes de los 3 usuarios no suma 100.");

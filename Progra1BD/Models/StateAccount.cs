@@ -20,5 +20,7 @@ namespace Progra1BD.Models
         public float saldoFinal { get; set; }
         
         public float saldoMinimo { get; set; }
+        
+        public int intereses { get; set; }
     }
 }

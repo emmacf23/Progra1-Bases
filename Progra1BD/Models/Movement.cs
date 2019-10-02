@@ -8,6 +8,10 @@ namespace Progra1BD.Models
         public int ID { get; set; }
 
         public int idEstadoCuenta { get; set; }
+        
+        public int idCuenta { get; set; }
+        
+        public int idTipoMovimiento { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime fecha { get; set; }

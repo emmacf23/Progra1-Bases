@@ -55,6 +55,7 @@
             <th>Saldo Inicial</th>
             <th>Saldo Final</th>
             <th>Saldo Minimo</th>
+            <th>Intereses</th>
             <th></th>
         </tr>
         </thead>
@@ -82,6 +83,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.saldoMinimo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.intereses)
                 </td>
                 <td>
                     <a asp-controller="Transaction" asp-action="Movements" asp-route-id="@item.ID"> Seleccionar</a>

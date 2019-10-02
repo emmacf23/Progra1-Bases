@@ -2,49 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44d171-b444-4184-9314-4a10d9afb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Models/ObjetiveAccount.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Transaction/DeleteObjetiveAccount.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Transaction/UpdateObjetiveAccount.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddObjetiveAccount.g.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteObjetiveAccount.g.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/ObjetiveAccount.g.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateObjetiveAccount.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Progra1BD/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/TransactionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/About/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/About/About.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Login/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Login/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/ObjetiveAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/ObjetiveAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/StateAccount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/StateAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Transaction/Movements.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/Movements.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/AddObjetiveAccount.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.2/Progra1BD.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/About/About.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/About/About.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Register.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Login/Register.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddBeneficiaries.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteBeneficiarie.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteBeneficiarie.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Movements.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Movements.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/NewSavings.g.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/ObjetiveAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/ObjetiveAccount.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/StateAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/StateAccount.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateBeneficiarie.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateBeneficiarie.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateObjetiveAccount.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateObjetiveAccount.g.cshtml.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,35 +124,35 @@
         <option value="$PROJECT_DIR$/Models/Account.cs" />
         <option value="$PROJECT_DIR$/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/Views/StateAccount.cshtml.cs" />
-        <option value="$PROJECT_DIR$/Models/StateAccount.cs" />
         <option value="$PROJECT_DIR$/Views/StateAccount.cshtml" />
         <option value="$PROJECT_DIR$/Views/Home/Privacy.cshtml" />
         <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
         <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
         <option value="$PROJECT_DIR$/Views/Login/Login.cshtml" />
         <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
         <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
         <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
         <option value="$PROJECT_DIR$/Models/VariablesLocales.cs" />
-        <option value="$PROJECT_DIR$/Models/Movement.cs" />
-        <option value="$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Models/ObjetiveAccount.cs" />
         <option value="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/NewSavings.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" />
-        <option value="$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
         <option value="$PROJECT_DIR$/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/Views/Login/Register.cshtml" />
         <option value="$PROJECT_DIR$/Views/About/About.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/DeleteObjetiveAccount.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/Movements.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/UpdateObjetiveAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
+        <option value="$PROJECT_DIR$/Models/Movement.cs" />
+        <option value="$PROJECT_DIR$/Models/ObjetiveAccount.cs" />
+        <option value="$PROJECT_DIR$/Models/StateAccount.cs" />
+        <option value="$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Views/Transaction/Movements.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" />
       </list>
     </option>
   </component>
@@ -284,7 +261,9 @@
       <workItem from="1568674550801" duration="5418000" />
       <workItem from="1568680749990" duration="1966000" />
       <workItem from="1569083323533" duration="1436000" />
-      <workItem from="1569726742261" duration="5643000" />
+      <workItem from="1569726742261" duration="5729000" />
+      <workItem from="1569882105923" duration="245000" />
+      <workItem from="1569987298491" duration="1522000" />
     </task>
     <servers />
   </component>

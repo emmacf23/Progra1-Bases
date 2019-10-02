@@ -18,5 +18,9 @@ namespace Progra1BD.Models
         public float saldo { get; set; }
         
         public float montoAhorro { get; set; }
+        
+        public String descripcion { get; set; }
+        
+        public bool activo { get; set; }
     }
 }

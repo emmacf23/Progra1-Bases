@@ -60,6 +60,7 @@
             <th>Fecha Final</th>
             <th>Saldo</th>
             <th>Monto Ahorro</th>
+            <th>Descripcion</th>
         </tr>
         </thead>
         <tbody>
@@ -83,6 +84,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.montoAhorro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.descripcion)
                 </td>
             </tr>
         }

@@ -34,6 +34,8 @@ namespace Progra1BD.Models
                     objetiveAccount.fechaFinal = Convert.ToDateTime(sdr["FechaFinal"]);
                     objetiveAccount.saldo = Convert.ToSingle(sdr["Saldo"]);
                     objetiveAccount.montoAhorro = Convert.ToSingle(sdr["MontoAhorro"]);
+                    objetiveAccount.descripcion = Convert.ToString(sdr["Descripcion"]);
+                    objetiveAccount.activo = Convert.ToBoolean(sdr["Activo"]);
                     listObjetiveAccount.Add(objetiveAccount);
                 }
 
