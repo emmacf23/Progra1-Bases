@@ -10,7 +10,7 @@ namespace Progra1BD.Models
         string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
         //To View all Customers details      
-        public IEnumerable<Movement> GetAllMovements(int? id)
+        public IEnumerable<Movement> GetAllMovements()
         {
             List<Movement> listMovements = new List<Movement>();
 
@@ -18,7 +18,43 @@ namespace Progra1BD.Models
             {
                 SqlCommand cmd = new SqlCommand("MOVSP_GetMovimientos", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idEstadoCuenta", id);
+                cmd.Parameters.AddWithValue("@idEstadoCuenta", VariablesLocales.idEstadoCuentaActual);
+
+                con.Open();
+                SqlDataReader sdr = cmd.ExecuteReader();
+
+                while (sdr.Read())
+                {
+                    Movement movement = new Movement();
+                    
+                    movement.ID = Convert.ToInt32(sdr["id"]);
+                    movement.idEstadoCuenta = Convert.ToInt32(sdr["idEstadoCuenta"]);
+                    movement.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
+                    movement.idTipoMovimiento = Convert.ToInt32(sdr["idTipoMovimiento"]);
+                    movement.fecha = Convert.ToDateTime(sdr["Fecha"]);
+                    movement.monto = Convert.ToSingle(sdr["Monto"]);
+                    movement.nuevoSaldo = Convert.ToSingle(sdr["NuevoSaldo"]);
+                    movement.descripcion = Convert.ToString(sdr["Descripcion"]);
+                    listMovements.Add(movement);
+                }
+
+                con.Close();
+            }
+
+            return listMovements;
+        }
+        
+        
+        public IEnumerable<Movement> GetAllMovementsQuery(String descripcion)
+        {
+            List<Movement> listMovements = new List<Movement>();
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("MOVSP_GetMovimientosQuery", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@mensaje", descripcion);
+                cmd.Parameters.AddWithValue("@idEstadoCuenta", VariablesLocales.idEstadoCuentaActual);
 
                 con.Open();
                 SqlDataReader sdr = cmd.ExecuteReader();

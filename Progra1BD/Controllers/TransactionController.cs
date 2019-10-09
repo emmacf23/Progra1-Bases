@@ -9,7 +9,7 @@ namespace Progra1BD.Controllers
 {
     public class TransactionController : Controller
     {
-        string _Name, _Email, _Date;
+        private string _Name, _Email, _Date, _Description;
         private int _TypeDoc, _TypeP, _DocId, _Percentage, _Mobile1, _Mobile2, _ID;
         List<Beneficiarie> listBeneficiaries = new List<Beneficiarie>();
         BeneficiarieDataAcessLayer objBeneficiarie = new BeneficiarieDataAcessLayer();
@@ -26,6 +26,18 @@ namespace Progra1BD.Controllers
 
         [HttpGet]
         public IActionResult AddBeneficiaries()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult ResultSearch(List<Movement> listMovement)
+        {
+            return View(listMovement);
+        }
+
+        
+        [HttpGet]
+        public IActionResult SearchMovement()
         {
             return View();
         }
@@ -84,6 +96,19 @@ namespace Progra1BD.Controllers
                 return RedirectToAction("Beneficiaries","Transaction");
             }
             return View("AddBeneficiaries");
+        }
+        
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SearchMovement(IFormCollection formCollection)
+        {
+            _Description = Convert.ToString(formCollection["descripcion"]);
+            Console.WriteLine(_Description);
+            List<Movement> listMovement = new List<Movement>();
+            listMovement = objMovement.GetAllMovementsQuery(_Description).ToList();
+            Console.WriteLine(listMovement);
+            return View("ResultSearch",listMovement);
         }
 
 
@@ -182,7 +207,7 @@ namespace Progra1BD.Controllers
         {
             VariablesLocales.idEstadoCuentaActual = id;
             List<Movement> listMovement = new List<Movement>();
-            listMovement = objMovement.GetAllMovements(VariablesLocales.idEstadoCuentaActual).ToList();
+            listMovement = objMovement.GetAllMovements().ToList();
             return View(listMovement);
         }
         

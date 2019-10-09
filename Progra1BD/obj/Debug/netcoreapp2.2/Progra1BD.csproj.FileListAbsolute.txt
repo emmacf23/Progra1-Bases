@@ -110,3 +110,5 @@ C:/Users/Emmanuel Castro/RiderProjects/Progra1 Bases/Progra1-Bases/Progra1BD/obj
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/AddObjetiveAccount.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/DeleteObjetiveAccount.g.cshtml.cs
 /Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/UpdateObjetiveAccount.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/SearchMovement.g.cshtml.cs
+/Users/edgarpa12/OneDrive - Estudiantes ITCR/TEC/Semestre 4/Bases de Datos/Progra1-Bases/Progra1BD/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/ResultSearch.g.cshtml.cs

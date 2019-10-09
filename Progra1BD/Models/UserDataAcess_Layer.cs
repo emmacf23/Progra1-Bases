@@ -33,7 +33,7 @@ namespace Progra1BD.Models
                     user.TypeDocID = Convert.ToInt32(sdr["idTipoDocumento"]);
                     user.Name = sdr["Nombre"].ToString();
                     user.Date = Convert.ToDateTime(sdr["FechaNacimiento"]);
-                    user.DocID = Convert.ToInt32(sdr["DocId"]);
+                    user.DocID = (int) Convert.ToInt64(sdr["DocId"]);
                     user.Email = sdr["Email"].ToString();
                     user.Mobile1 = Convert.ToInt32(sdr["Telefono1"]);
                     user.Mobile2 = Convert.ToInt32(sdr["Telefono2"]);

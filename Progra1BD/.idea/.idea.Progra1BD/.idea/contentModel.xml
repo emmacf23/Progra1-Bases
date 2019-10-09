@@ -72,6 +72,8 @@
           <e p="DeleteObjetiveAccount.cshtml" t="Include" />
           <e p="Movements.cshtml" t="Include" />
           <e p="ObjetiveAccount.cshtml" t="Include" />
+          <e p="ResultSearch.cshtml" t="Include" />
+          <e p="SearchMovement.cshtml" t="Include" />
           <e p="StateAccount.cshtml" t="Include" />
           <e p="UpdateBeneficiarie.cshtml" t="Include" />
           <e p="UpdateObjetiveAccount.cshtml" t="Include" />
