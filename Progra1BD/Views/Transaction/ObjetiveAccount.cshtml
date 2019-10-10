@@ -54,7 +54,6 @@
     <table class="table table-bordered table-responsive" style="border: 0px; padding-left: 175px">
         <thead class="table-primary">
         <tr>
-            <th>ID</th>
             <th>Id de la Cuenta</th>
             <th>Fecha Inicio</th>
             <th>Fecha Final</th>
@@ -67,9 +66,6 @@
         @foreach (var item in Model)
         {
             <tr class="table-secondary">
-                <td>
-                    @Html.DisplayFor(modelItem => item.ID)
-                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.idCuenta)
                 </td>
@@ -120,7 +116,7 @@
                     <p class="card-text">Si deseas modificar lo que deseas ahorrar o el motivo, puedes hacerlo desde aqui. </p>
                 </div>
                 <div class="card-footer">
-                    <a asp-controller="Transaction" asp-action="UpdateBeneficiarie" class="btn btn-primary">Actualizar Ahora!</a>
+                    <a asp-controller="Transaction" asp-action="UpdateObjetiveAccount" class="btn btn-primary">Actualizar Ahora!</a>
                 </div>
             </div>
         </div>
@@ -133,7 +129,7 @@
                     <p class="card-text">Aqui puedes eliminar un objetivo de tu cuenta.</p>
                 </div>
                 <div class="card-footer">
-                    <a asp-controller="Transaction" asp-action="DeleteBeneficiarie" class="btn btn-primary">Eliminar ahora!</a>
+                    <a asp-controller="Transaction" asp-action="DeleteObjetiveAccount" class="btn btn-primary">Eliminar ahora!</a>
                 </div>
             </div>
         </div>

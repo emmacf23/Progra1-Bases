@@ -9,11 +9,11 @@ namespace Progra1BD.Models
 
         public int idCuenta { get; set; }
 
-        [DataType(DataType.Date)]
-        public DateTime fechaInicio { get; set; }
         
-        [DataType(DataType.Date)]
-        public DateTime fechaFinal { get; set; }
+        public string fechaInicio { get; set; }
+        
+        
+        public string fechaFinal { get; set; }
 
         public float saldo { get; set; }
         

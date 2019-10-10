@@ -48,13 +48,21 @@ ViewData["Title"] = "Añadir Cuentas Objetivo";
     <hr/>
     <div class="row">
         <div class="col-md-4">
-            <form asp-controller="Transaction" asp-action="UpdateBeneficiaries">
+            <form asp-controller="Transaction" asp-action="UpdateObjetiveAccount">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
-                    <i class="fas fa-user"></i>
-                    <input asp-for="ID" class="form-control" placeholder="ID"/>
-                    <span asp-validation-for="ID" class="text-danger"></span>
+                    <input asp-for="ID" class="form-control" placeholder="Id" required/>
                 </div>
+                <div class="form-group">
+                    <input asp-for="montoAhorro" class="form-control" placeholder="Monto" required/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="descripcion" class="form-control" placeholder="Descripcion" required/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="fechaFinal" class="form-control" type="date" placeholder="Correo Electronico" required/>
+                </div>
+
                 <div class="form-group">
                     <input type="submit" value="Agregar" class="btn btn-primary"/>
                 </div>

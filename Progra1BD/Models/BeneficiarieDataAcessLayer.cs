@@ -9,7 +9,7 @@ namespace Progra1BD.Models
 {
     public class BeneficiarieDataAcessLayer
     {
-                string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
+                string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
                 //To View all Customers details      
         public IEnumerable<Beneficiarie> GetAllBeneficiaries()

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_Progra1BD.1459748247.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Emmanuel Castro\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Progra1BD.-355781386.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Emmanuel Castro\RiderProjects\Progra1 Bases\Progra1-Bases\Progra1BD" t="IncludeRecursive">
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
@@ -118,17 +118,17 @@
         <e p="js" t="Include">
           <e p="site.js" t="Include" />
         </e>
-        <e p="node_modules/@types" t="IncludeRecursive">
+        <e p="node_modules\@types" t="IncludeRecursive">
           <e p="events" t="IncludeRecursive" />
           <e p="minimatch" t="IncludeRecursive" />
           <e p="node" t="IncludeRecursive" />
         </e>
-        <e p="node_modules/bootstrap" t="IncludeRecursive" />
-        <e p="node_modules/browser-sync" t="IncludeRecursive" />
-        <e p="node_modules/del" t="IncludeRecursive" />
-        <e p="node_modules/gulp" t="IncludeRecursive" />
-        <e p="node_modules/jquery" t="IncludeRecursive" />
-        <e p="node_modules/merge-stream" t="IncludeRecursive" />
+        <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\browser-sync" t="IncludeRecursive" />
+        <e p="node_modules\del" t="IncludeRecursive" />
+        <e p="node_modules\gulp" t="IncludeRecursive" />
+        <e p="node_modules\jquery" t="IncludeRecursive" />
+        <e p="node_modules\merge-stream" t="IncludeRecursive" />
         <e p="package-lock.json" t="Include" />
         <e p="package.json" t="Include" />
         <e p="vendor" t="Include">

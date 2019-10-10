@@ -60,49 +60,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/AboutController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ObjetiveAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/Movements.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/UpdateObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/AddObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/SearchMovement.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/DeleteObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Transaction/ResultSearch.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/DeleteObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/UpdateObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/AboutController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/About/About.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/TransactionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Login/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Login/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Shared/_CookieConsentPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/UpdateBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/AddObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/VariablesLocales.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Account.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/LoginController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/Movements.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/StateAccount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Models/Beneficiarie.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Progra1BD.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/ResultSearch.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/ObjetiveAccount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp2.2/Razor/Views/Transaction/Beneficiaries.g.cshtml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/StateAccount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,8 +128,6 @@
         <option value="$PROJECT_DIR$/Views/Login/SelectAccount.cshtml" />
         <option value="$PROJECT_DIR$/Controllers/LoginController.cs" />
         <option value="$PROJECT_DIR$/Views/Login/Login.cshtml" />
-        <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
         <option value="$PROJECT_DIR$/Models/VariablesLocales.cs" />
         <option value="$PROJECT_DIR$/Views/Transaction/AddBeneficiaries.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/DeleteBeneficiarie.cshtml" />
@@ -141,23 +137,25 @@
         <option value="$PROJECT_DIR$/Views/Login/Register.cshtml" />
         <option value="$PROJECT_DIR$/Views/About/About.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/Beneficiaries.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/UpdateObjetiveAccount.cshtml" />
         <option value="$PROJECT_DIR$/Models/Movement.cs" />
-        <option value="$PROJECT_DIR$/Models/ObjetiveAccount.cs" />
         <option value="$PROJECT_DIR$/Models/StateAccount.cs" />
-        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/StateAccount.cshtml" />
         <option value="$PROJECT_DIR$/Models/MovementDataAccess_Layer.cs" />
-        <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
         <option value="$PROJECT_DIR$/Views/Transaction/SearchStateAccount.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/DeleteObjetiveAccount.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/ResultSearch.cshtml" />
-        <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
         <option value="$PROJECT_DIR$/Views/Transaction/SearchMovement.cshtml" />
         <option value="$PROJECT_DIR$/Views/Transaction/Movements.cshtml" />
-        <option value="$PROJECT_DIR$/Views/Transaction/AddObjetiveAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Models/UserDataAcess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/StateAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/BeneficiarieDataAcessLayer.cs" />
+        <option value="$PROJECT_DIR$/Models/AccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Models/ObjetiveAccount.cs" />
+        <option value="$PROJECT_DIR$/Views/Transaction/UpdateObjetiveAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/ObjetiveAccount.cshtml" />
         <option value="$PROJECT_DIR$/Models/ObjetiveAccountDataAccess_Layer.cs" />
+        <option value="$PROJECT_DIR$/Views/Transaction/AddObjetiveAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Views/Transaction/DeleteObjetiveAccount.cshtml" />
+        <option value="$PROJECT_DIR$/Controllers/TransactionController.cs" />
       </list>
     </option>
   </component>

@@ -5,12 +5,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Progra1BD.Models;
 
+
 namespace Progra1BD.Controllers
 {
     public class TransactionController : Controller
     {
         private string _Name, _Email, _Date, _Description;
-        private int _TypeDoc, _TypeP, _DocId, _Percentage, _Mobile1, _Mobile2, _ID;
+        private int _TypeDoc, _TypeP, _DocId, _Percentage, _Mobile1, _Mobile2, _ID, _Monto;
         List<Beneficiarie> listBeneficiaries = new List<Beneficiarie>();
         BeneficiarieDataAcessLayer objBeneficiarie = new BeneficiarieDataAcessLayer();
         StateAccountDataAccess_Layer objState = new StateAccountDataAccess_Layer();
@@ -29,13 +30,20 @@ namespace Progra1BD.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public IActionResult ResultSearch(List<Movement> listMovement)
         {
             return View(listMovement);
         }
 
-        
+        [HttpGet]
+        public IActionResult AddObjetiveAccount()
+        {
+            return View();
+        }
+
+
         [HttpGet]
         public IActionResult SearchMovement()
         {
@@ -47,7 +55,7 @@ namespace Progra1BD.Controllers
         public IActionResult AddBeneficiaries(IFormCollection formCollection)
         {
             if (ModelState.IsValid)
-            {    
+            {
                 _Name = Convert.ToString(formCollection["Name"]);
                 _Email = Convert.ToString(formCollection["Email"]);
                 _TypeDoc = Convert.ToInt32(formCollection["TypeDocID"]);
@@ -76,7 +84,7 @@ namespace Progra1BD.Controllers
                         objBeneficiarie.AddBeneficiarie(beneficiarie);
                         Console.WriteLine("Lo hice");
                         //ModelState.AddModelError("Success", "Usuario" + _Name + " Añadido con exito.");
-                        return RedirectToAction("Beneficiaries","Transaction");
+                        return RedirectToAction("Beneficiaries", "Transaction");
                     }
 
                     if (sumaP() + _Percentage < 100)
@@ -85,7 +93,7 @@ namespace Progra1BD.Controllers
                         objBeneficiarie.AddBeneficiarie(beneficiarie);
                         ModelState.AddModelError("Error",
                             "La suma de los porcentajes de los 3 usuarios no suma 100.");
-                        return RedirectToAction("Beneficiaries","Transaction");
+                        return RedirectToAction("Beneficiaries", "Transaction");
                     }
 
                     ModelState.AddModelError("Error", "La suma de los 3 es mayor a 100");
@@ -93,12 +101,13 @@ namespace Progra1BD.Controllers
                 }
 
                 ModelState.AddModelError("Error", "Ya existen 3 usuarios");
-                return RedirectToAction("Beneficiaries","Transaction");
+                return RedirectToAction("Beneficiaries", "Transaction");
             }
+
             return View("AddBeneficiaries");
         }
-        
-        
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult SearchMovement(IFormCollection formCollection)
@@ -108,11 +117,54 @@ namespace Progra1BD.Controllers
             List<Movement> listMovement = new List<Movement>();
             listMovement = objMovement.GetAllMovementsQuery(_Description).ToList();
             Console.WriteLine(listMovement);
-            return View("ResultSearch",listMovement);
+            return View("ResultSearch", listMovement);
         }
 
 
-        public IActionResult AddObjetiveAccount()
+        public IActionResult AddObjetiveAccount(IFormCollection formCollection)
+        {
+            if (ModelState.IsValid)
+            {
+                _Monto = Convert.ToInt32(formCollection["montoAhorro"]);
+                _Description = Convert.ToString(formCollection["descripcion"]);
+                _Date = Convert.ToString(formCollection["fechaFinal"]);
+                ObjetiveAccount objetiveAccount = new ObjetiveAccount();
+                objetiveAccount.montoAhorro = _Monto;
+                objetiveAccount.descripcion = _Description;
+                objetiveAccount.fechaFinal = _Date;
+                objObjetive.AddObjetiveAccount(objetiveAccount);
+                Console.WriteLine("Lo hice");
+
+
+            }
+
+            return View("AddObjetiveAccount");
+        }
+        
+        public IActionResult UpdateObjetiveAccount(IFormCollection formCollection)
+        {
+            if (ModelState.IsValid)
+            {
+                _ID = Convert.ToInt32(formCollection["ID"]);
+                _Monto = Convert.ToInt32(formCollection["montoAhorro"]);
+                _Description = Convert.ToString(formCollection["descripcion"]);
+                _Date = Convert.ToString(formCollection["fechaFinal"]);
+                ObjetiveAccount objetiveAccount = new ObjetiveAccount();
+                objetiveAccount.ID = _ID;
+                objetiveAccount.montoAhorro = _Monto;
+                objetiveAccount.descripcion = _Description;
+                objetiveAccount.fechaFinal = _Date;
+                objObjetive.UpdateCuentaObjetivo(objetiveAccount);
+                Console.WriteLine("Lo hice");
+
+
+            }
+
+            return View("UpdateObjetiveAccount");
+        }
+        
+        [HttpGet]
+        public IActionResult UpdateObjetiveAccount()
         {
             return View();
         }
@@ -123,9 +175,24 @@ namespace Progra1BD.Controllers
         {
             return View();
         }
+        
+        
+        [HttpGet]
+        public IActionResult DeleteObjetiveAccount()
+        {
+            return View();
+        }
+        
+        
+        public IActionResult DeleteObjetiveAccount(IFormCollection formCollection)
+        {
+            _ID = Convert.ToInt32(formCollection["ID"]);
+            ObjetiveAccount objetiveAccount = new ObjetiveAccount();
+            objObjetive.DeleteCuentaObjetivo(_ID);
+            return RedirectToAction("ObjetiveAccount", "Transaction");
+        }
 
-        [
-            HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult UpdateBeneficiaries(IFormCollection formCollection)
         {
@@ -156,15 +223,15 @@ namespace Progra1BD.Controllers
                 {
                     objBeneficiarie.UpdateBeneficiaries(beneficiarie);
                     ModelState.AddModelError("Error", "Usuario" + _Name + " Actualizado con exito.");
-                    return RedirectToAction("Beneficiaries","Transaction");
+                    return RedirectToAction("Beneficiaries", "Transaction");
                 }
-                
+
                 if (sumaP() - findById(_ID) + _Percentage < 100)
                 {
                     objBeneficiarie.UpdateBeneficiaries(beneficiarie);
                     ModelState.AddModelError("Error",
                         "La suma de los porcentajes de los 3 usuarios no suma 100.");
-                    return RedirectToAction("Beneficiaries","Transaction");
+                    return RedirectToAction("Beneficiaries", "Transaction");
                 }
 
                 ModelState.AddModelError("Error", "La suma de los actualizados es mayor a 100");
@@ -175,15 +242,13 @@ namespace Progra1BD.Controllers
             return View("UpdateBeneficiarie");
         }
 
-        [
-            HttpGet]
+        [HttpGet]
         public IActionResult DeleteBeneficiarie()
         {
             return View();
         }
 
-        [
-            HttpPost]
+        [HttpPost]
         public IActionResult DeleteBeneficiarie(IFormCollection formCollection)
         {
             _ID = Convert.ToInt32(formCollection["ID"]);
@@ -195,6 +260,18 @@ namespace Progra1BD.Controllers
 
             return new RedirectToActionResult("Index", "Home", _ID);
         }
+        [HttpPost]
+        public IActionResult DeleteObjective(IFormCollection formCollection)
+        {
+            _ID = Convert.ToInt32(formCollection["ID"]);
+            if (ModelState.IsValid)
+            {
+                objObjetive.DeleteCuentaObjetivo(_ID);
+                return RedirectToAction("ObjetiveAccount");
+            }
+
+            return new RedirectToActionResult("Index", "Home", _ID);
+        }
 
         public IActionResult StateAccount()
         {
@@ -202,7 +279,7 @@ namespace Progra1BD.Controllers
             listStateAccount = objState.GetAllStateAccounts(VariablesLocales.idCuentaActual).ToList();
             return View(listStateAccount);
         }
-        
+
         public IActionResult Movements(int id)
         {
             VariablesLocales.idEstadoCuentaActual = id;
@@ -210,10 +287,11 @@ namespace Progra1BD.Controllers
             listMovement = objMovement.GetAllMovements().ToList();
             return View(listMovement);
         }
-        
+
         public IActionResult ObjetiveAccount()
         {
             List<ObjetiveAccount> listObjetiveAccounts = new List<ObjetiveAccount>();
+            Console.WriteLine(VariablesLocales.idCuentaActual);
             listObjetiveAccounts = objObjetive.GetAllObjetiveAccounts(VariablesLocales.idCuentaActual).ToList();
             return View(listObjetiveAccounts);
         }
@@ -229,7 +307,7 @@ namespace Progra1BD.Controllers
 
             return sumPorcentajes;
         }
-        
+
         public int findById(int id)
         {
             foreach (Beneficiarie b in listBeneficiaries)

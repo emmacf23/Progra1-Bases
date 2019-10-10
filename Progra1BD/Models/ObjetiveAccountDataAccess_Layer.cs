@@ -7,7 +7,7 @@ namespace Progra1BD.Models
 {
     public class ObjetiveAccountAccountDataAccess_Layer
     {
-        string connectionString = @"Server=127.0.0.1,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
+        string connectionString = @"Server=192.168.100.30,1433;Database=Progra1BD;User Id=SA;Password=Servidor_123";
 
         //To View all Customers details      
         public IEnumerable<ObjetiveAccount> GetAllObjetiveAccounts(int? id)
@@ -28,14 +28,12 @@ namespace Progra1BD.Models
                 {
                     ObjetiveAccount objetiveAccount = new ObjetiveAccount();
                     
-                    objetiveAccount.ID = Convert.ToInt32(sdr["id"]);
                     objetiveAccount.idCuenta = Convert.ToInt32(sdr["idCuenta"]);
-                    objetiveAccount.fechaInicio = Convert.ToDateTime(sdr["FechaInicio"]);
-                    objetiveAccount.fechaFinal = Convert.ToDateTime(sdr["FechaFinal"]);
+                    objetiveAccount.fechaInicio = Convert.ToString(sdr["FechaInicio"]);
+                    objetiveAccount.fechaFinal = Convert.ToString(sdr["FechaFinal"]);
                     objetiveAccount.saldo = Convert.ToSingle(sdr["Saldo"]);
                     objetiveAccount.montoAhorro = Convert.ToSingle(sdr["MontoAhorro"]);
                     objetiveAccount.descripcion = Convert.ToString(sdr["Descripcion"]);
-                    objetiveAccount.activo = Convert.ToBoolean(sdr["Activo"]);
                     listObjetiveAccount.Add(objetiveAccount);
                 }
 
@@ -45,23 +43,17 @@ namespace Progra1BD.Models
             return listObjetiveAccount;
         }
         
-        public void AddBeneficiarie(Beneficiarie beneficiarie)
+        public void AddObjetiveAccount(ObjetiveAccount objetiveAccount)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("BSP_AddBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("COSP_AddCuentaObjetivo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@idCuenta", VariablesLocales.idCuentaActual);
-                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
-                cmd.Parameters.AddWithValue("@idTipoParentesco", beneficiarie.TipoParentesco);
-                cmd.Parameters.AddWithValue("@Nombre", beneficiarie.Name);
-                cmd.Parameters.AddWithValue("@FechaNacimiento", beneficiarie.Date);
-                cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
-                cmd.Parameters.AddWithValue("@Email", beneficiarie.Email);
-                cmd.Parameters.AddWithValue("@Telefono1", beneficiarie.Mobile1);
-                cmd.Parameters.AddWithValue("@Telefono2", beneficiarie.Mobile2);
-                cmd.Parameters.AddWithValue("@Porcentaje", beneficiarie.Porcentaje);
+                cmd.Parameters.AddWithValue("@MontoAhorro", objetiveAccount.montoAhorro);
+                cmd.Parameters.AddWithValue("@FechaFinal", objetiveAccount.fechaFinal);
+                cmd.Parameters.AddWithValue("@Descripcion", objetiveAccount.descripcion);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -70,24 +62,13 @@ namespace Progra1BD.Models
         }
 
         //To Update the records of a particluar Customer    
-        public void UpdateBeneficiaries(Beneficiarie beneficiarie)
+        public void DeleteCuentaObjetivo(int? id)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("BSP_UpdateBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("COSP_DeleteCuentaObjetivo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@id", beneficiarie.ID);
-                cmd.Parameters.AddWithValue("@idCuenta", beneficiarie.idCuenta);
-                cmd.Parameters.AddWithValue("@idTipoDocumento", beneficiarie.TypeDocID);
-                cmd.Parameters.AddWithValue("@idTipoParentesco", beneficiarie.TipoParentesco);
-                cmd.Parameters.AddWithValue("@Nombre", beneficiarie.Name);
-                cmd.Parameters.AddWithValue("@FechaNacimiento", beneficiarie.Date);
-                cmd.Parameters.AddWithValue("@DocId", beneficiarie.DocID);
-                cmd.Parameters.AddWithValue("@Email", beneficiarie.Email);
-                cmd.Parameters.AddWithValue("@Telefono1", beneficiarie.Mobile1);
-                cmd.Parameters.AddWithValue("@Telefono2", beneficiarie.Mobile2);
-                cmd.Parameters.AddWithValue("@Porcentaje", beneficiarie.Porcentaje);
+                cmd.Parameters.AddWithValue("@idCuenta", id);
 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -134,16 +115,19 @@ namespace Progra1BD.Models
         }
 
         //To Delete the record on a particular Customer    
-        public void DeleteBeneficiarie(int? id)
+        public void UpdateCuentaObjetivo(ObjetiveAccount co)
         {
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlCommand cmd = new SqlCommand("BSP_DeleteBeneficiario", con);
+                SqlCommand cmd = new SqlCommand("COSP_UpdateCuentaObjetivo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.AddWithValue("@id", id);
-
+                cmd.Parameters.AddWithValue("@id", co.ID );
+                cmd.Parameters.AddWithValue("@idCuenta", VariablesLocales.idCuentaActual );
+                cmd.Parameters.AddWithValue("@MontoAhorro", co.montoAhorro);
+                cmd.Parameters.AddWithValue("@FechaFinal", co.fechaFinal);
+                cmd.Parameters.AddWithValue("@Descripcion", co.descripcion);
+                
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();
